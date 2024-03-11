@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="shortcut icon" href="" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="keywords" content="" />
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="">
+  <meta property="og:description" content="">
+  <meta property="og:url" content="">
+  <meta property="og:site_name" content="">
+  <meta property="og:image" content="">
+  <meta property="og:locale" content="ja_JP">
+  <meta name="twitter:image" content="">
+  <script src="https://cdn.jsdelivr.net/npm/viewport-extra@2.0.1/dist/iife/viewport-extra.min.js" defer></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link href="./css/reset.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="./css/style.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="./css/page.css" media="all" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <!-- ヘッダー -->
+  <header class="rp-header">
+    <div class="rp__site__inner">
+      <!-- グローバルナビ PC -->
+      <div class="header-gnav__pc">
+        <div class="gnav-logo">
+          <a href="#">
+            <img src="./img/header_logo.png">
+          </a>
+        </div>
+        <ul class="gnav-list">
+          <li class="gnav-item">
+            <a href="#about">
+              紹介<br>About
+            </a>
+          </li>
+          <li class="gnav-item">
+            <a href="#concept">
+              コンセプト<br>
+              <span>Concept</span>
+            </a>
+          </li>
+          <li class="gnav-item">
+            <a href="#topDaily">
+              らぱんだのいちにち<br>
+              <span>Daily</span>
+            </a>
+          </li>
+          <li class="gnav-item">
+            <a href="#news">
+              お知らせ<br>
+              <span>News</span>
+            </a>
+          </li>
+          <li class="gnav-item">
+            <a href="#information">
+              基本情報<br>
+              <span>Information</span>
+            </a>
+          </li>
+          <li class="gnav-item">
+            <a href="" class="gnav-item__tell">
+              <div class="gnav-item__tell--flex">
+                <img src="./img/tell_icon.png" alt="電話 アイコン">
+                <p>TELL</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- グローバルナビ SP -->
+      <div class="header-gnav__sp">
+        <div id="js_hamburger">
+          <nav class="ham-gnav" class="hamburgerGnav">
+            <ul class="ham-gnav-list">
+              <div class="ham-gnav-logo">
+                <img src="./img/header_logo.png">
+              </div>
+              <li class="ham-gnav-item">
+                <a href="#">
+                  ホーム<br>Home
+                </a>
+              </li>
+              <li class="ham-gnav-item">
+                <a href="#about">
+                  紹介<br>About
+                </a>
+              </li>
+              <li class="ham-gnav-item">
+                <a href="#concept">
+                  コンセプト<br>
+                  <span>Concept</span>
+                </a>
+              </li>
+              <li class="ham-gnav-item">
+                <a href="#topDaily">
+                  らぱんだのいちにち<br>
+                  <span>Daily</span>
+                </a>
+              </li>
+              <li class="ham-gnav-item">
+                <a href="#news">
+                  お知らせ<br>
+                  <span>News</span>
+                </a>
+              </li>
+              <li class="ham-gnav-item">
+                <a href="#information">
+                  基本情報<br>
+                  <span>Information</span>
+                </a>
+              </li>
+              <div class="ham-gnav-sns">
+                <img src="./img/insta_logo_small.png">
+                <img src="./img/face_logo_small.png">
+              </div>
+            </ul>
+          </nav>
+          <button type="button" id="hamBtn"></button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- メイン -->
+  <main>
+    <article>
+      <!-- top -->
+      <section class="rp-under-top">
+        <div class="rp__site__inner _pd-0">
+          <h1 class="under-top__title">
+            Daily<br>
+            <span class="under-top__title--sub">
+              お店の1日を焼き上がりの時間と合わせて紹介
+            </span>
+          </h1>
+        </div>
+      </section>
+
+      <section class="rp-daily-section">
+        <div class="rp__site__inner">
+          <!-- 01.9:00〜 -->
+          <div class="rp-daily-list">
+            <div class="rp-daily-left">
+              <!-- スライダー -->
+              <div class="swiper slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./img/daily_img01.jpg" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/daily_img02.jpg" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/daily_img03.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+              <!-- サムネイル -->
+              <div class="swiper slider-thumbnail">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./img/daily_img01.jpg" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/daily_img02.jpg" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/daily_img03.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="rp-daily-right">
+              <p class="rp-daily-time"><span class="_green-time">9:00〜</span></p>
+              <h3 class="rp-daily-title _green-title">
+                オープンと同時に
+              </h3>
+              <p class="rp-daily-text">
+                パン屋さんの紹介パン屋さんの紹介パン屋さんの紹介パン屋さんの紹介パン屋さんの紹介パン屋さんの紹介
+                パン屋さんの紹介パン屋さんの紹介パン屋さんの紹介
+              </p>
+              <div class="rp-daily-recommen _green-frame">
+                <p class="rp-daily-recommen__title _green-title__recommen">おすすめパン</p>
+                <ul class="rp-daily-recommen__list">
+                  <li class="rp-daily-recommen__item">
+                    <span>・</span>おすすめパン
+                  </li>
+                  <li class="rp-daily-recommen__item">
+                    <span>・</span>おすすめパン
+                  </li>
+                  <li class="rp-daily-recommen__item">
+                    <span>・</span>おすすめパン
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- 02.12:30〜 -->
+          <div class="rp-daily-list">
+            <div class="rp-daily-left">
+              <!-- スライダー -->
+              <div class="swiper slider02">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./img/daily_img01.jpg" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/daily_img02.jpg" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/daily_img03.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+              <!-- サムネイル -->
+              <div class="swiper slider-thumbnail02">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./img/daily_img01.jpg" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/daily_img02.jpg" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/daily_img03.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="rp-daily-right">
+              <p class="rp-daily-time"><span class="_orange-time">12:30〜</span></p>
+              <h3 class="rp-daily-title _orange-title">
+                お昼ご飯にいかが
+              </h3>
+              <p class="rp-daily-text">
+                パン屋さんの紹介パン屋さんの紹介パン屋さんの紹介パン屋さんの紹介パン屋さんの紹介パン屋さんの紹介
+                パン屋さんの紹介パン屋さんの紹介パン屋さんの紹介
+              </p>
+              <div class="rp-daily-recommen _orange-frame">
+                <p class="rp-daily-recommen__title _orange-title__recommen">おすすめパン</p>
+                <ul class="rp-daily-recommen__list">
+                  <li class="rp-daily-recommen__item">
+                    <span>・</span>おすすめパン
+                  </li>
+                  <li class="rp-daily-recommen__item">
+                    <span>・</span>おすすめパン
+                  </li>
+                  <li class="rp-daily-recommen__item">
+                    <span>・</span>おすすめパン
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- 03.15:00〜 -->
+          <div class="rp-daily-list">
+            <div class="rp-daily-left">
+              <!-- スライダー -->
+              <div class="swiper slider03">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./img/daily_img01.jpg" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/daily_img02.jpg" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/daily_img03.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+              <!-- サムネイル -->
+              <div class="swiper slider-thumbnail03">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./img/daily_img01.jpg" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/daily_img02.jpg" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/daily_img03.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="rp-daily-right">
+              <p class="rp-daily-time"><span class="_pink-time">15:00〜</span></p>
+              <h3 class="rp-daily-title _pink-title">
+                一休みの相方に
+              </h3>
+              <p class="rp-daily-text">
+                パン屋さんの紹介パン屋さんの紹介パン屋さんの紹介パン屋さんの紹介パン屋さんの紹介パン屋さんの紹介
+                パン屋さんの紹介パン屋さんの紹介パン屋さんの紹介
+              </p>
+              <div class="rp-daily-recommen _pink-frame">
+                <p class="rp-daily-recommen__title _pink-title__recommen">おすすめパン</p>
+                <ul class="rp-daily-recommen__list">
+                  <li class="rp-daily-recommen__item">
+                    <span>・</span>おすすめパン
+                  </li>
+                  <li class="rp-daily-recommen__item">
+                    <span>・</span>おすすめパン
+                  </li>
+                  <li class="rp-daily-recommen__item">
+                    <span>・</span>おすすめパン
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- 04.17:00〜 -->
+          <div class="rp-daily-list">
+            <div class="rp-daily-left">
+              <!-- スライダー -->
+              <div class="swiper slider04">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./img/daily_img01.jpg" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/daily_img02.jpg" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/daily_img03.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+              <!-- サムネイル -->
+              <div class="swiper slider-thumbnail04">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./img/daily_img01.jpg" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/daily_img02.jpg" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/daily_img03.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="rp-daily-right">
+              <p class="rp-daily-time"><span class="_blue-time">17:30〜</span></p>
+              <h3 class="rp-daily-title _blue-title">
+                もうすぐ閉店
+              </h3>
+              <p class="rp-daily-text">
+                パン屋さんの紹介パン屋さんの紹介パン屋さんの紹介パン屋さんの紹介パン屋さんの紹介パン屋さんの紹介
+                パン屋さんの紹介パン屋さんの紹介パン屋さんの紹介
+              </p>
+              <div class="rp-daily-recommen _blue-frame">
+                <p class="rp-daily-recommen__title _blue-title__recommen">おすすめパン</p>
+                <ul class="rp-daily-recommen__list">
+                  <li class="rp-daily-recommen__item">
+                    <span>・</span>おすすめパン
+                  </li>
+                  <li class="rp-daily-recommen__item">
+                    <span>・</span>おすすめパン
+                  </li>
+                  <li class="rp-daily-recommen__item">
+                    <span>・</span>おすすめパン
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <!-- フッター -->
+  <footer class="rp-footer">
+    <div class="rp__site__inner">
+      <div class="footer-sns">
+        <img src="./img/insta_logo_white.png">
+        <img src="./img/face_logo_white.png">
+      </div>
+      <div class="footer-list">
+        <img src="./img/footer_logo.png" class="footer-logo">
+        <p class="footer-text">
+          住　　所：京都府京都市1-1<br>
+          営業時間：9:00〜18:00<br>
+          <br>
+          &#169; ORGANIC Bakery All Rights Reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="./js/modal.js"></script>
+  <script type='text/javascript' src="./js/daily_slider.js"></script>
+  <script type='text/javascript' src="./js/script.js"></script>
+</body>
+
+</html>

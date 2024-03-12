@@ -312,3 +312,39 @@
 .slider-thumbnail04 .swiper-slide-thumb-active {
   opacity: 1;
 }
+
+/*--------------------------------
+お知らせ一覧ページ
+---------------------------------*/
+.rp-news-section {
+  margin: 160px 0;
+}
+@media screen and (max-width: 550px) {
+  .rp-news-section {
+    margin: 120px 0;
+  }
+}
+.rp-news-item {
+  padding: 24px 12px;
+  border-bottom: 1px dotted #77787B;
+}
+@media screen and (max-width: 768px) {
+  .rp-news-item {
+    padding: 16px 12px;
+  }
+}
+.rp-news-item:first-child {
+  border-top: 1px dotted #77787B;
+}
+.rp-news-item a:hover {
+  opacity: 0.6;
+}
+.rp-news-item__date {
+  margin-right: 44px;
+  opacity: 0.8;
+}
+@media screen and (max-width: 550px) {
+  .rp-news-item__date {
+    margin-right: 24px;
+  }
+}

@@ -276,7 +276,7 @@ $white: #fff;
 
 }
 
-._blue{
+._blue {
 
     &-time {
         padding: 4px 44px 4px 12px;
@@ -364,5 +364,44 @@ $white: #fff;
 
     & .swiper-slide-thumb-active {
         opacity: 1;
+    }
+}
+
+/*--------------------------------
+お知らせ一覧ページ
+---------------------------------*/
+.rp-news {
+    &-section {
+        margin: 160px 0;
+
+        @media screen and (max-width: 550px) {
+            margin: 120px 0;
+        }
+    }
+
+    &-item {
+        padding: 24px 12px;
+        border-bottom: 1px dotted #77787B;
+
+        @media screen and (max-width: 768px) {
+            padding: 16px 12px;
+        }
+
+        &:first-child {
+            border-top: 1px dotted #77787B;
+        }
+
+        & a:hover{
+            opacity: 0.6;
+        }
+
+        &__date {
+            margin-right: 44px;
+            opacity: 0.8;
+
+            @media screen and (max-width: 550px) {
+                margin-right: 24px;
+            }
+        }
     }
 }

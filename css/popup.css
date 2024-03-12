@@ -17,10 +17,17 @@
 }
 
 .pl_modalInner {
-    padding: 40px 55px;
+    padding: 24px;
     background-color: #fff;
+    border: 8px solid #9AB176;
 }
 
+
+@media screen and (max-width: 599px) {
+    .pl_modalInner {
+        padding: 10px;
+    }
+}
 /* Magnific Popup CSS */
 .mfp-bg {
     top: 0;
@@ -178,7 +185,6 @@ button::-moz-focus-inner {
     top: 0;
     text-decoration: none;
     text-align: center;
-    opacity: 0.65;
     padding: 0 0 18px 10px;
     color: #fff;
     font-style: normal;
@@ -483,24 +489,43 @@ screen and (max-height: 300px) {
     z-index: 1045;
 }
 
-button.mfp-close,
-.mfp-image-holder .mfp-close {
+.mfp-close {
     position: absolute;
     display: block;
-    background: url(/_pl_img/pl_modalClose.png);
+    background: #9AB176 !important;
     border: none;
-    width: 33px;
-    height: 44px;
-    top: -65px;
-    right: 20px;
+    width: 48px;
+    height: 48px;
     font-size: 0;
     border-radius: 0 !important;
 }
 
-.pl_jsModalClose span {
-    background: url(/_pl_img/btn_close02.png) 0 50% no-repeat;
-    padding-left: 20px;
+.mfp-close::before{
+    content: '';
+    display: block;
+    position: relative;
+    top: 20px;
+    left: 3px;
+    width: 36px;
+    height: 2px;
+    background-color: #fff;
+    transition: 0.3s ease-in-out;
+    transform: translate(0, 1.5px) rotate(-45deg);
 }
+
+.mfp-close::after{
+    content: '';
+    display: block;
+    position: relative;
+    right: -2.5px;
+    bottom: 25.5px;
+    width: 36px;
+    height: 2px;
+    background-color: #fff;
+    transition: 0.3s ease-in-out;
+    transform: translate(0, 1.5px) rotate(45deg);
+}
+
 
 #elementor-lightbox-slideshow-single-img {
     display: none !important;
@@ -512,16 +537,4 @@ button.mfp-close,
     width: 100%;
     max-width: 810px;
     margin: 0 auto;
-}
-
-.pl_modalInner {
-    padding: 40px 55px;
-    background-color: #fff;
-
-}
-
-@media screen and (max-width: 599px) {
-    .pl_modalInner {
-        padding: 10px;
-    }
 }

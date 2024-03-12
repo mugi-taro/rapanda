@@ -757,9 +757,57 @@ Concept
         }
 
         &__text {
-            margin-top: 44px;
+            margin: 44px 0 24px;
             line-height: 2.8rem;
             font-weight: normal;
+        }
+
+        &__modal{
+            float: right;
+            text-decoration: underline;
+        }
+    }
+
+    &-modal{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+
+        &__img{
+            width: 40%;
+
+            @media screen and (max-width: 550px) {
+                width: 80%;
+            }
+
+            & img{
+                border-radius: 50%;
+            }
+        }
+
+        &__write{
+            width: 50%;
+            margin-top: 12px;
+            margin-left: 32px;
+
+            @media screen and (max-width: 550px) {
+                width: 100%;
+                margin-left: 0;
+                margin: 32px 0 44px;
+            }
+        }
+
+        &__title{
+            font-size: 28px;
+            & span{
+                border-bottom: 3px solid $green;
+            }
+        }
+
+        &__text{
+            margin-top: 32px;
+            line-height: 2rem;
         }
     }
 }

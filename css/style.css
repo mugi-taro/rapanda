@@ -701,9 +701,52 @@ Concept
   background-size: cover;
 }
 .top-concept-item__text {
-  margin-top: 44px;
+  margin: 44px 0 24px;
   line-height: 2.8rem;
   font-weight: normal;
+}
+.top-concept-item__modal {
+  float: right;
+  text-decoration: underline;
+}
+.top-concept-modal {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.top-concept-modal__img {
+  width: 40%;
+}
+@media screen and (max-width: 550px) {
+  .top-concept-modal__img {
+    width: 80%;
+  }
+}
+.top-concept-modal__img img {
+  border-radius: 50%;
+}
+.top-concept-modal__write {
+  width: 50%;
+  margin-top: 12px;
+  margin-left: 32px;
+}
+@media screen and (max-width: 550px) {
+  .top-concept-modal__write {
+    width: 100%;
+    margin-left: 0;
+    margin: 32px 0 44px;
+  }
+}
+.top-concept-modal__title {
+  font-size: 28px;
+}
+.top-concept-modal__title span {
+  border-bottom: 3px solid #9AB176;
+}
+.top-concept-modal__text {
+  margin-top: 32px;
+  line-height: 2rem;
 }
 
 /*--------------------------------

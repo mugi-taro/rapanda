@@ -859,6 +859,13 @@ Daily
                 left: 30%;
             }
 
+            @media screen and (max-width: 750px) {
+                top: 7%;
+                left: 12%;
+                width: 70px;
+                height: 70px;
+            }
+
             @media screen and (max-width: 550px) {
                 top: 1%;
                 left: 2%;
@@ -881,6 +888,13 @@ Daily
 
             @media screen and (min-width: 1500px) {
                 right: 30%;
+            }
+
+            @media screen and (max-width: 750px) {
+                top: 7%;
+                right: 12%;
+                width: 70px;
+                height: 70px;
             }
 
             @media screen and (max-width: 550px) {

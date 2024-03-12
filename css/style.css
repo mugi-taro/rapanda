@@ -799,6 +799,14 @@ Daily
     left: 30%;
   }
 }
+@media screen and (max-width: 750px) {
+  .top-daily-title::before {
+    top: 7%;
+    left: 12%;
+    width: 70px;
+    height: 70px;
+  }
+}
 @media screen and (max-width: 550px) {
   .top-daily-title::before {
     top: 1%;
@@ -822,6 +830,14 @@ Daily
 @media screen and (min-width: 1500px) {
   .top-daily-title::after {
     right: 30%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .top-daily-title::after {
+    top: 7%;
+    right: 12%;
+    width: 70px;
+    height: 70px;
   }
 }
 @media screen and (max-width: 550px) {

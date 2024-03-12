@@ -504,7 +504,7 @@ screen and (max-height: 300px) {
     content: '';
     display: block;
     position: relative;
-    top: 20px;
+    top: 22px;
     left: 3px;
     width: 36px;
     height: 2px;
@@ -518,7 +518,7 @@ screen and (max-height: 300px) {
     display: block;
     position: relative;
     right: -2.5px;
-    bottom: 25.5px;
+    bottom: 23.5px;
     width: 36px;
     height: 2px;
     background-color: #fff;

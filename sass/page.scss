@@ -18,6 +18,7 @@
 }
 
 /* カラー */
+$light_green: #A9B892;
 $green: #9AB176;
 $deep_brown: #A58113;
 $normal_brown: #BFB08C;
@@ -36,7 +37,7 @@ $white: #fff;
     z-index: 1;
     width: 100%;
     height: 300px;
-    background: url(../img/top_pc.jpg);
+    background: url(../img/top_pc02.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
@@ -195,27 +196,27 @@ $white: #fff;
 ._green {
 
     &-time {
-        padding: 4px 44px 4px 12px;
-        background: $green;
+        padding: 4px 6px 4px 12px;
+        background: $light_green;
 
         @media screen and (max-width: 767px) {
-            padding: 6px 32px 6px 12px;
+            padding: 6px 8px 6px 12px;
         }
     }
 
     &-title {
-        color: $green;
+        color: $light_green;
         font-weight: 500;
 
         &__recommen {
-            color: $green;
+            color: $light_green;
             font-weight: 500;
             letter-spacing: 0.2rem;
         }
     }
 
     &-frame {
-        border: 2px solid $green;
+        border: 2px solid $light_green;
     }
 
 }

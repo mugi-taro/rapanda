@@ -18,6 +18,7 @@
 }
 
 /* カラー */
+$light_green: #A9B892;
 $green: #9AB176;
 $deep_brown: #A58113;
 $normal_brown: #BFB08C;
@@ -441,23 +442,6 @@ TOP
 .top-kv {
     position: relative;
     width: 100%;
-    height: 75vh;
-
-    @media screen and (min-width: 1300px) {
-        height: 80vh;
-    }
-
-    @media screen and (max-width: 1000px) {
-        height: 55vh;
-    }
-
-    @media screen and (max-width: 900px) {
-        height: 45vh;
-    }
-
-    @media screen and (max-width: 550px) {
-        height: 600px;
-    }
 
     & img {
         float: right;
@@ -474,6 +458,7 @@ TOP
         position: absolute;
         left: 3%;
         bottom: 7%;
+        z-index: 3;
         padding: 4px 24px 8px 24px;
         background: $white;
         font-size: 32px;
@@ -1568,60 +1553,24 @@ Footer
 
 }
 
-._sp-up-first {
-    opacity: 0;
-    visibility: hidden;
-    transition: 2s;
-    transform: translateY(40px);
-
-    @media screen and (max-width: 550px) {
-        transition: 6s;
-        transform: translateY(40px);
-    }
-}
-
 .up-second {
     opacity: 0;
     visibility: hidden;
-    transition: 3s;
+    transition: 4s;
     transform: translateY(40px);
-}
-
-._sp-up-second {
-    opacity: 0;
-    visibility: hidden;
-    transition: 3s;
-    transform: translateY(40px);
-
-    @media screen and (max-width: 550px) {
-        transition: 8s;
-        transform: translateY(40px);
-    }
 }
 
 .up-third {
     opacity: 0;
     visibility: hidden;
-    transition: 5S;
+    transition: 6S;
     transform: translateY(40px);
-}
-
-._sp-up-third {
-    opacity: 0;
-    visibility: hidden;
-    transition: 5S;
-    transform: translateY(40px);
-
-    @media screen and (max-width: 550px) {
-        transition: 10s;
-        transform: translateY(40px);
-    }
 }
 
 .up-fourth {
     opacity: 0;
     visibility: hidden;
-    transition: 6S;
+    transition: 8S;
     transform: translateY(40px);
 }
 

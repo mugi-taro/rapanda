@@ -5,7 +5,7 @@
 const sliderKvPc = new Swiper(".slider-kv_pc", {
 
     autoplay: {
-        delay: 5000, //3秒ごとにスライダを切り替える
+        delay: 4000, //秒ごとにスライダを切り替える
         disableOnInteraction: false //スライドに触っても自動再生を停止しない
     },
 
@@ -17,8 +17,8 @@ const sliderKvPc = new Swiper(".slider-kv_pc", {
 const sliderKvSp = new Swiper(".slider-kv_sp", {
 
     autoplay: {
-        delay: 3000, //3秒ごとにスライダを切り替える
-        disableOnInteraction: false //スライドに触っても自動再生を停止しない
+        delay: 3000, 
+        disableOnInteraction: false,
     },
 
     effect: "fade",

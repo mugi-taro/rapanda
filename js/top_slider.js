@@ -20,11 +20,11 @@ const sliderKvPc = new Swiper(".slider-kv_pc", {
 const sliderKvSp = new Swiper(".slider-kv_sp", {
 
     loop: true,
-    speed: 3500,            
+    speed: 2500,            
     effect: 'fade',
 
     autoplay: {
-        delay: 5000, 
+        delay: 4000, 
         disableOnInteraction: false,
     },
 

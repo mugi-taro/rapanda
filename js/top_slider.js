@@ -4,24 +4,29 @@
 // KV（PC）
 const sliderKvPc = new Swiper(".slider-kv_pc", {
 
+    loop: true,
+    speed: 3500, 
+    effect: 'fade',
+
     autoplay: {
         delay: 5000, //秒ごとにスライダを切り替える
         disableOnInteraction: false //スライドに触っても自動再生を停止しない
     },
 
-    effect: "fade",
 
 });
 
 // KV（PC）
 const sliderKvSp = new Swiper(".slider-kv_sp", {
 
+    loop: true,
+    speed: 3500,            
+    effect: 'fade',
+
     autoplay: {
         delay: 5000, 
         disableOnInteraction: false,
     },
-
-    effect: "fade",
 
 });
 

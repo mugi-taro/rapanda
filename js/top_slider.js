@@ -16,7 +16,7 @@ const sliderKvPc = new Swiper(".slider-kv_pc", {
 
 });
 
-// KV（PC）
+// KV（sp）
 const sliderKvSp = new Swiper(".slider-kv_sp", {
 
     loop: true,

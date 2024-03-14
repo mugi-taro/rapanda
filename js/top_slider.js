@@ -5,11 +5,11 @@
 const sliderKvPc = new Swiper(".slider-kv_pc", {
 
     loop: true,
-    speed: 3500, 
+    speed: 2000, 
     effect: 'fade',
 
     autoplay: {
-        delay: 5000, //秒ごとにスライダを切り替える
+        delay: 3000, //秒ごとにスライダを切り替える
         disableOnInteraction: false //スライドに触っても自動再生を停止しない
     },
 
@@ -20,11 +20,11 @@ const sliderKvPc = new Swiper(".slider-kv_pc", {
 const sliderKvSp = new Swiper(".slider-kv_sp", {
 
     loop: true,
-    speed: 2500,            
+    speed: 2000,            
     effect: 'fade',
 
     autoplay: {
-        delay: 4000, 
+        delay: 2000, 
         disableOnInteraction: false,
     },
 

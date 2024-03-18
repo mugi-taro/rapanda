@@ -708,9 +708,8 @@ Concept
   border-radius: 50%;
 }
 .top-concept-modal__write {
-  width: 100%;
+  width: 85%;
   margin-top: 12px;
-  margin-left: 32px;
 }
 @media screen and (max-width: 550px) {
   .top-concept-modal__write {
@@ -727,7 +726,7 @@ Concept
   border-bottom: 3px solid #9AB176;
 }
 .top-concept-modal__text {
-  margin-top: 32px;
+  margin-top: 24px;
   margin-bottom: 48px;
   line-height: 2rem;
 }

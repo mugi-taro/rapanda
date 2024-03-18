@@ -773,9 +773,8 @@ Concept
         }
 
         &__write{
-            width: 100%;
+            width: 85%;
             margin-top: 12px;
-            margin-left: 32px;
 
             @media screen and (max-width: 550px) {
                 width: 100%;
@@ -793,7 +792,7 @@ Concept
         }
 
         &__text{
-            margin-top: 32px;
+            margin-top: 24px;
             margin-bottom: 48px;
             line-height: 2rem;
         }

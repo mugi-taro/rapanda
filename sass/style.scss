@@ -760,7 +760,8 @@ Concept
         flex-wrap: wrap;
 
         &__img{
-            width: 40%;
+            text-align: center;
+            width: 80%;
 
             @media screen and (max-width: 550px) {
                 width: 80%;
@@ -772,7 +773,7 @@ Concept
         }
 
         &__write{
-            width: 50%;
+            width: 100%;
             margin-top: 12px;
             margin-left: 32px;
 
@@ -784,6 +785,7 @@ Concept
         }
 
         &__title{
+            margin-top: 24px;
             font-size: 28px;
             & span{
                 border-bottom: 3px solid $green;
@@ -792,6 +794,7 @@ Concept
 
         &__text{
             margin-top: 32px;
+            margin-bottom: 48px;
             line-height: 2rem;
         }
     }

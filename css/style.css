@@ -696,7 +696,8 @@ Concept
   flex-wrap: wrap;
 }
 .top-concept-modal__img {
-  width: 40%;
+  text-align: center;
+  width: 80%;
 }
 @media screen and (max-width: 550px) {
   .top-concept-modal__img {
@@ -707,7 +708,7 @@ Concept
   border-radius: 50%;
 }
 .top-concept-modal__write {
-  width: 50%;
+  width: 100%;
   margin-top: 12px;
   margin-left: 32px;
 }
@@ -719,6 +720,7 @@ Concept
   }
 }
 .top-concept-modal__title {
+  margin-top: 24px;
   font-size: 28px;
 }
 .top-concept-modal__title span {
@@ -726,6 +728,7 @@ Concept
 }
 .top-concept-modal__text {
   margin-top: 32px;
+  margin-bottom: 48px;
   line-height: 2rem;
 }
 

@@ -1,23 +1,5 @@
-/*--------------------------------
-基本設定
----------------------------------*/
+@use '_block/coomon';
 
-/* フォント */
-@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Itim&family=Zen+Kaku+Gothic+New:wght@300&family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap');
-
-.zen-maru gothic-regular {
-    font-family: "Zen Maru Gothic", serif;
-    font-weight: 700;
-    font-style: normal;
-}
-
-.itim-regular {
-    font-family: "Itim", cursive;
-    font-weight: 400;
-    font-style: normal;
-}
-
-/* カラー */
 $light_green: #A9B892;
 $green: #9AB176;
 $deep_brown: #A58113;
@@ -28,377 +10,6 @@ $orange: #D68654;
 $blue: #9AC6DD;
 $black: #333;
 $white: #fff;
-
-/* 全体設定*/
-body {
-    letter-spacing: .08ex;
-    color: $black;
-    font-size: 15px;
-    font-family: "Zen Maru Gothic", serif;
-    font-weight: 400;
-    box-sizing: border-box;
-
-    @media screen and (max-width: 768px) {
-        overflow-x: hidden;
-    }
-}
-
-a {
-    transition: opacity .3s;
-    text-decoration: none;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    vertical-align: bottom;
-    border-style: none;
-    object-fit: cover;
-}
-
-ul,
-li {
-    list-style: none;
-}
-
-.pc-only {
-    display: block;
-
-    @media screen and (max-width: 550px) {
-        display: none;
-    }
-}
-
-.sp-only {
-    display: none;
-
-    @media screen and (max-width: 550px) {
-        display: block;
-    }
-}
-
-._anchor-just {
-    display: block;
-    padding-top: 30px;
-    margin-top: -30px;
-
-    @media screen and (max-width: 550px) {
-        padding-top: 10px;
-        margin-top: -10px;
-    }
-}
-
-/*--------------------------------
-レイアウト
----------------------------------*/
-
-.rp__site__inner {
-    max-width: 1200px;
-    margin: 0 auto;
-
-    @media screen and (min-width:1800px) {
-        max-width: 1600px;
-    }
-
-    @media screen and (max-width: 1100px) {
-        padding: 0 10px;
-    }
-}
-
-.rp__site__annotion {
-    &__item {
-        display: block;
-        position: relative;
-        padding-left: 1.5em;
-        font-size: 0.8rem;
-        line-height: 1.6rem;
-        opacity: 0.6;
-
-        & span {
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
-    }
-}
-
-._pd-0 {
-    padding: 0;
-}
-
-._mb-0 {
-    margin-bottom: 0 !important;
-}
-
-
-/*--------------------------------
-ヘッダー・グローバルナビ
----------------------------------*/
-/*　PC(851〜)　*/
-.rp-header {
-    position: fixed;
-    top: 0;
-    z-index: 5;
-    width: 100%;
-    height: 105px;
-    background: $white;
-
-    @media screen and (max-width: 850px) {
-        height: 60px;
-    }
-
-    @media screen and (max-width: 850px) {
-        background: unset;
-    }
-
-
-}
-
-.header-gnav {
-
-    &__pc {
-        display: block;
-
-        @media screen and (max-width: 850px) {
-            display: none
-        }
-    }
-
-    &__sp {
-        display: none;
-
-        @media screen and (max-width: 850px) {
-            display: block;
-        }
-    }
-}
-
-.gnav {
-
-    &-logo {
-        float: left;
-        margin-top: 16px;
-
-        @media screen and (max-width: 990px) {
-            width: 20%;
-        }
-
-        @media screen and (max-width: 930px) {
-            width: 16%;
-        }
-
-
-
-        img {
-            width: 70%;
-
-            @media screen and (max-width: 990px) {
-                width: 100%;
-            }
-
-        }
-    }
-
-    &-list {
-        float: right;
-        margin-top: 32px;
-
-        @media screen and (max-width: 930px) {
-            margin-top: 22px;
-        }
-
-    }
-
-    &-item {
-        position: relative;
-        float: left;
-        text-align: left;
-        margin-right: 44px;
-        font-size: 14px;
-        font-weight: 700;
-
-        @media screen and (min-width:1900px) {
-            margin-right: 56px;
-        }
-
-        @media screen and (max-width: 1150px) {
-            margin-right: 28px;
-        }
-
-        @media screen and (max-width: 930px) {
-            margin-right: 22px;
-        }
-
-
-
-        &:last-child {
-            margin-right: 0;
-        }
-
-        a {
-            position: relative;
-            display: block;
-            line-height: 1.3rem;
-            letter-spacing: 0.2em;
-            transition: .3s;
-            font-size: 13px;
-
-            :hover {
-                opacity: 0.8;
-            }
-
-        }
-
-        &__tell {
-            width: 140px;
-            background: $green;
-            padding: 12px 0 12px 20px;
-            margin-top: -4px;
-
-            &--flex {
-                display: flex;
-                align-items: center;
-
-                img {
-                    width: 22%;
-                    margin-right: 12px;
-                }
-
-                p {
-                    font-size: 20px;
-                    color: $white;
-                }
-            }
-        }
-    }
-}
-
-
-/*　SP(〜850)　*/
-.ham-gnav {
-    pointer-events: none;
-    opacity: 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    color: $black;
-    transition: 0.8s all;
-    z-index: 0;
-    background: $white;
-
-
-    &-list {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        width: 90%;
-        padding-top: 80px;
-        margin: 0 auto;
-        text-align: left;
-    }
-
-    &-logo {
-        width: 100%;
-        text-align: center;
-        margin-bottom: 32px;
-
-        & img {
-            width: 50%;
-
-            @media screen and (min-width: 650px) {
-                width: 30%;
-            }
-        }
-    }
-
-    &-item {
-        width: 42%;
-        margin-bottom: 32px;
-        font-size: 12px;
-        border-bottom: 1px solid $black;
-    }
-
-    &-sns {
-        width: 80%;
-        margin-top: 32px;
-        text-align: center;
-
-        & img {
-            margin-right: 4px;
-
-            &:last-child {
-                margin-right: 0;
-                margin-left: 4px;
-            }
-        }
-    }
-
-
-}
-
-
-/* 開く */
-#hamBtn {
-    position: fixed;
-    top: 0;
-    right: 0;
-    padding: 8px;
-    outline: none;
-    border: none;
-    background: $normal_brown;
-    width: 48px;
-    height: 48px;
-    cursor: pointer;
-    transition: 0.8s all;
-
-    @media screen and (min-width: 650px) {
-        width: 60px;
-        height: 60px;
-    }
-
-}
-
-#hamBtn::before,
-#hamBtn::after {
-    content: '';
-    display: block;
-    height: 2px;
-    background-color: $white;
-    transform: translateY(13px);
-    transition: 0.3s ease-in-out;
-}
-
-#hamBtn::before {
-    transform: translate(0, -4px);
-}
-
-#hamBtn::after {
-    transform: translate(0, 4px);
-}
-
-/* 閉じる */
-.open {
-    #hamBtn {
-        z-index: 100;
-
-        &::before {
-            transform: translate(0, 1.5px) rotate(-45deg);
-            color: $black;
-        }
-
-        &:after {
-            transform: translate(0, 0) rotate(45deg);
-            color: $black;
-        }
-    }
-
-    .ham-gnav {
-        pointer-events: auto;
-        opacity: 1;
-    }
-}
 
 /*--------------------------------
 スタート
@@ -587,20 +198,20 @@ About
 Concept
 ---------------------------------*/
 .rp-top-concept {
-    background: url('../img/concept_bk_pc02.png');
+    background: url('/dist/images/concept_bk_pc02.png');
     background-size: contain;
     background-repeat: repeat;
     margin-top: 320px;
     padding: 80px 0;
 
     @media screen and (min-width: 1100px) {
-        background: url('../img/concept_bk_pc02.png');
+        background: url('/dist/images/concept_bk_pc02.png');
         background-size: cover;
         background-repeat: repeat;
     }
 
     @media screen and (max-width: 768px) {
-        background: url('../img/concept_bk_sp02.png');
+        background: url('/dist/images/concept_bk_sp02.png');
         background-size: contain;
         background-repeat: repeat;
         background-position: 100% auto;
@@ -711,7 +322,7 @@ Concept
                 position: absolute;
                 top: 6px;
                 content: '';
-                background: url(../img/number_01.png);
+                background: url(/dist/images/number_01.png);
                 background-size: cover;
                 width: 48px;
                 height: 48px;
@@ -727,7 +338,7 @@ Concept
             @extend .number_01;
 
             &::before {
-                background: url(../img/number_02.png);
+                background: url(/dist/images/number_02.png);
                 background-size: cover;
             }
         }
@@ -736,7 +347,7 @@ Concept
             @extend .number_01;
 
             &::before {
-                background: url(../img/number_03.png);
+                background: url(/dist/images/number_03.png);
                 background-size: cover;
             }
         }
@@ -803,13 +414,13 @@ Concept
 Daily
 ---------------------------------*/
 .rp-top-daily {
-    background: url('../img/yellow_bk_pc.jpg');
+    background: url('/dist/images/yellow_bk_pc.jpg');
     background-size: cover;
     background-repeat: repeat;
     margin-top: 320px;
 
     @media screen and (max-width: 768px) {
-        background: url('../img/yellow_bk_sp.jpg');
+        background: url('/dist/images/yellow_bk_sp.jpg');
         background-size: contain;
         background-repeat: repeat;
     }
@@ -832,7 +443,7 @@ Daily
 
         &::before {
             content: '';
-            background: url('../img/daily_title_left.png');
+            background: url('/dist/images/daily_title_left.png');
             background-size: cover;
             position: absolute;
             top: 5%;
@@ -863,7 +474,7 @@ Daily
 
         &::after {
             content: '';
-            background: url('../img/daily_title_right.png');
+            background: url('/dist/images/daily_title_right.png');
             background-size: cover;
             position: absolute;
             top: 5%;
@@ -1000,12 +611,12 @@ Daily
 
 
 .swiper-button-next {
-    background-image: url('../img/slider_next.png');
+    background-image: url('/dist/images/slider_next.png');
     right: 2px;
     left: auto;
 
     @media screen and (max-width: 550px) {
-        background-image: url('../img/slider_next.png');
+        background-image: url('/dist/images/slider_next.png');
         background-repeat: no-repeat;
         background-size: contain;
     }
@@ -1013,12 +624,12 @@ Daily
 }
 
 .swiper-button-prev {
-    background-image: url('../img/slider_back.png');
+    background-image: url('/dist/images/slider_back.png');
     right: auto;
     left: 0;
 
     @media screen and (max-width: 550px) {
-        background-image: url('../img/slider_back.png');
+        background-image: url('/dist/images/slider_back.png');
         background-repeat: no-repeat;
         background-size: contain;
     }
@@ -1040,7 +651,9 @@ Daily
 }
 
 /*--------------------------------
+
 News
+
 ---------------------------------*/
 .rp-top-news {
     margin-top: 320px;
@@ -1175,13 +788,13 @@ Info
         position: absolute;
         width: 100%;
         height: 650px;
-        background: url('../img/info_bk_pc.jpg');
+        background: url('/dist/images/info_bk_pc.jpg');
         background-repeat: no-repeat;
         background-size: contain;
 
         @media screen and (max-width: 550px) {
             height: 450px;
-            background: url('../img/info_bk_sp.jpg');
+            background: url('/dist/images/info_bk_sp.jpg');
             background-repeat: no-repeat;
             background-size: contain;
         }
@@ -1194,7 +807,7 @@ Info
         z-index: -10;
         width: 100%;
         height: 1250px;
-        background: url('../img/yellow_bk_pc.jpg');
+        background: url('/dist/images/yellow_bk_pc.jpg');
         background-repeat: no-repeat;
         background-size: cover;
 
@@ -1455,7 +1068,7 @@ Info
                 left: -23%;
                 width: 38px;
                 height: 38px;
-                background: url('../img/tell_icon.png');
+                background: url('/dist/images/tell_icon.png');
                 background-repeat: no-repeat;
                 background-size: contain;
 
@@ -1471,133 +1084,4 @@ Info
         }
 
     }
-}
-
-/*--------------------------------
-Footer
----------------------------------*/
-.rp-footer {
-    position: relative;
-    margin: 520px 0 0;
-    background: $normal_brown;
-    z-index: -10;
-
-    @media screen and (max-width: 768px) {
-        margin: 380px 0 0;
-    }
-
-    &::before {
-        content: '';
-        position: absolute;
-        z-index: -9;
-        width: 100%;
-        height: 80px;
-        background: $light_brown;
-
-        @media screen and (max-width: 550px) {
-            height: 60px;
-        }
-    }
-}
-
-.footer {
-    &-sns {
-        text-align: center;
-        padding-top: 24px;
-
-        @media screen and (max-width: 550px) {
-            padding-top: 12px;
-        }
-
-        & img {
-            margin-right: 12px;
-
-            &:last-child {
-                margin-right: 0;
-                margin-left: 12px;
-            }
-        }
-    }
-
-    &-list {
-        margin-top: 52px;
-
-        @media screen and (max-width: 550px) {
-            margin-top: 32px;
-        }
-    }
-
-    &-logo {
-        width: 10%;
-
-        @media screen and (max-width: 550px) {
-            width: 30%;
-        }
-    }
-
-    &-text {
-        padding: 24px 0;
-        color: $white;
-        font-size: 12px;
-        font-weight: 400;
-        letter-spacing: 0.2rem;
-
-        @media screen and (max-width: 550px) {
-            padding: 18px 0;
-        }
-    }
-}
-
-/*--------------------------------
-アニメーション
----------------------------------*/
-.up-first {
-    opacity: 0;
-    visibility: hidden;
-    transition: 2s;
-    transform: translateY(40px);
-
-}
-
-.up-second {
-    opacity: 0;
-    visibility: hidden;
-    transition: 4s;
-    transform: translateY(40px);
-}
-
-.up-third {
-    opacity: 0;
-    visibility: hidden;
-    transition: 6S;
-    transform: translateY(40px);
-}
-
-.up-fourth {
-    opacity: 0;
-    visibility: hidden;
-    transition: 8S;
-    transform: translateY(40px);
-}
-
-
-.right {
-    opacity: 0;
-    visibility: hidden;
-    transition: 3s;
-    transform: translateX(40px);
-}
-
-.left {
-    opacity: 0;
-    visibility: hidden;
-    transition: 3s;
-    transform: translateX(-40px);
-}
-
-.active {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-    transform: translateX(0);
 }

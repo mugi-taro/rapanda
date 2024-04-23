@@ -1,23 +1,5 @@
-/*--------------------------------
-基本設定
----------------------------------*/
+@use '_block/coomon';
 
-/* フォント */
-@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Itim&family=Zen+Kaku+Gothic+New:wght@300&family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap');
-
-.zen-maru gothic-regular {
-    font-family: "Zen Maru Gothic", serif;
-    font-weight: 700;
-    font-style: normal;
-}
-
-.itim-regular {
-    font-family: "Itim", cursive;
-    font-weight: 400;
-    font-style: normal;
-}
-
-/* カラー */
 $light_green: #A9B892;
 $green: #9AB176;
 $deep_brown: #A58113;
@@ -37,7 +19,7 @@ $white: #fff;
     z-index: 1;
     width: 100%;
     height: 300px;
-    background: url(../img/top_pc02.jpg);
+    background: url(/dist/images/top_pc02.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;

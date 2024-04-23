@@ -19,6 +19,7 @@
 /* 全体設定*/
 body {
   box-sizing: border-box;
+  overflow-x: hidden;
   color: #333;
   font-weight: 400;
   font-size: 16px;
@@ -954,12 +955,10 @@ Daily
 .top-daily-write {
   display: none;
   margin: 0 auto;
-  margin-top: 32px;
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 768px) {
   .top-daily-write {
     width: 100%;
-    margin-top: 24px;
   }
 }
 .top-daily-write__number {
@@ -977,36 +976,38 @@ Daily
   margin-bottom: 24px;
   color: #A58113;
   font-weight: 500;
-  font-size: 36px;
+  font-size: 28px;
   letter-spacing: 0.6rem;
 }
 .top-daily-write__title--time {
   float: right;
-  font-size: 32px;
-  line-height: 3.2rem;
+  font-size: 26px;
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 768px) {
   .top-daily-write__title--time {
     margin-left: 6px;
     float: unset;
     font-size: 24px;
   }
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 768px) {
   .top-daily-write__title {
     margin-bottom: 12px;
-    font-size: 28px;
+    font-size: 26px;
   }
 }
 .top-daily-write__text {
   line-height: 1.8rem;
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 768px) {
   .top-daily-write__text {
     line-height: 2rem;
   }
 }
 
+/*--------------------------------
+スライダー
+---------------------------------*/
 .swiper {
   width: min(100%, 900px);
   min-height: 820px;

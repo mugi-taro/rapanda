@@ -36,6 +36,7 @@ body {
     font-family: "Zen Maru Gothic", serif;
     font-weight: 400;
     box-sizing: border-box;
+    overflow-x: hidden;
 
     @media screen and (max-width: 768px) {
         font-size: 14px;

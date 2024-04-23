@@ -19,6 +19,7 @@
 /* 全体設定*/
 body {
   box-sizing: border-box;
+  overflow-x: hidden;
   color: #333;
   font-weight: 400;
   font-size: 16px;

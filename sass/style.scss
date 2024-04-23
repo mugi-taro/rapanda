@@ -513,11 +513,9 @@ Daily
     &-write {
         display: none;
         margin: 0 auto;
-        margin-top: 32px;
 
-        @media screen and (max-width: 550px) {
+        @media screen and (max-width: 768px) {
             width: 100%;
-            margin-top: 24px;
         }
 
         &__number {
@@ -534,32 +532,31 @@ Daily
         &__title {
             margin-bottom: 24px;
             color: $deep_brown;
-            font-size: 36px;
+            font-size: 28px;
             font-weight: 500;
             letter-spacing: 0.6rem;
 
             &--time {
                 float: right;
-                font-size: 32px;
-                line-height: 3.2rem;
+                font-size: 26px;
 
-                @media screen and (max-width: 550px) {
+                @media screen and (max-width: 768px) {
                     margin-left: 6px;
                     float: unset;
                     font-size: 24px;
                 }
             }
 
-            @media screen and (max-width: 550px) {
+            @media screen and (max-width: 768px) {
                 margin-bottom: 12px;
-                font-size: 28px;
+                font-size: 26px;
             }
         }
 
         &__text {
             line-height: 1.8rem;
 
-            @media screen and (max-width: 550px) {
+            @media screen and (max-width: 768px) {
                 line-height: 2rem;
             }
         }
@@ -567,7 +564,9 @@ Daily
 
 }
 
-//*-- スライダー　--*//
+/*--------------------------------
+スライダー
+---------------------------------*/
 .swiper {
     width: min(100%, 900px);
     min-height: 820px;

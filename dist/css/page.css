@@ -485,7 +485,7 @@ Footer
   position: relative;
   width: 100%;
   height: 300px;
-  background: url(/dist/images/top_pc02.jpg);
+  background: url(./dist/images/top_pc02.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;

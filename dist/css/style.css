@@ -181,10 +181,6 @@ li {
 @media screen and (max-width: 850px) {
   .rp-header {
     height: 60px;
-  }
-}
-@media screen and (max-width: 850px) {
-  .rp-header {
     background: unset;
   }
 }
@@ -207,7 +203,7 @@ li {
 }
 
 .gnav-logo {
-  margin-top: 16px;
+  margin-top: 10px;
   float: left;
 }
 @media screen and (max-width: 990px) {
@@ -229,13 +225,8 @@ li {
   }
 }
 .gnav-list {
-  margin-top: 32px;
+  margin-top: 24px;
   float: right;
-}
-@media screen and (max-width: 930px) {
-  .gnav-list {
-    margin-top: 22px;
-  }
 }
 .gnav-item {
   position: relative;
@@ -244,11 +235,6 @@ li {
   font-weight: 700;
   font-size: 14px;
   text-align: left;
-}
-@media screen and (min-width: 1900px) {
-  .gnav-item {
-    margin-right: 56px;
-  }
 }
 @media screen and (max-width: 1150px) {
   .gnav-item {
@@ -276,9 +262,12 @@ li {
 }
 .gnav-item__tell {
   width: 140px;
-  margin-top: -4px;
+  height: 80px;
+  margin-top: -24px;
   padding: 12px 0 12px 20px;
+  border-radius: 0 0 0 20px;
   background: #765D11;
+  line-height: 3.4rem !important;
 }
 .gnav-item__tell--flex {
   display: flex;

@@ -20,9 +20,6 @@ $white: #fff;
 
     @media screen and (max-width: 850px) {
         height: 60px;
-    }
-
-    @media screen and (max-width: 850px) {
         background: unset;
     }
 
@@ -52,7 +49,7 @@ $white: #fff;
 
     &-logo {
         float: left;
-        margin-top: 16px;
+        margin-top: 10px;
 
         @media screen and (max-width: 990px) {
             width: 20%;
@@ -76,11 +73,7 @@ $white: #fff;
 
     &-list {
         float: right;
-        margin-top: 32px;
-
-        @media screen and (max-width: 930px) {
-            margin-top: 22px;
-        }
+        margin-top: 24px;
 
     }
 
@@ -92,9 +85,6 @@ $white: #fff;
         font-size: 14px;
         font-weight: 700;
 
-        @media screen and (min-width:1900px) {
-            margin-right: 56px;
-        }
 
         @media screen and (max-width: 1150px) {
             margin-right: 28px;
@@ -125,10 +115,13 @@ $white: #fff;
         }
 
         &__tell {
+            border-radius: 0 0 0 20px;
             width: 140px;
+            height: 80px;
             background: $btn_brown;
             padding: 12px 0 12px 20px;
-            margin-top: -4px;
+            margin-top: -24px;
+            line-height: 3.4rem !important;
 
             &--flex {
                 display: flex;
@@ -140,7 +133,7 @@ $white: #fff;
                 }
 
                 p {
-                    font-size: 20px;
+                    font-size: 18px;
                     color: $white;
                 }
             }

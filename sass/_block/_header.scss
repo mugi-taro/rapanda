@@ -1,0 +1,276 @@
+$btn_brown: #765D11;
+$title_brown: #987406;
+$normal_brown: #BFB08C;
+$light_brown: #E8D6AB;
+
+$black: #333;
+$white: #fff;
+
+/*--------------------------------
+ヘッダー・グローバルナビ
+---------------------------------*/
+/*　PC(851〜)　*/
+.rp-header {
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    width: 100%;
+    height: 105px;
+    background: $white;
+
+    @media screen and (max-width: 850px) {
+        height: 60px;
+    }
+
+    @media screen and (max-width: 850px) {
+        background: unset;
+    }
+
+
+}
+
+.header-gnav {
+
+    &__pc {
+        display: block;
+
+        @media screen and (max-width: 850px) {
+            display: none
+        }
+    }
+
+    &__sp {
+        display: none;
+
+        @media screen and (max-width: 850px) {
+            display: block;
+        }
+    }
+}
+
+.gnav {
+
+    &-logo {
+        float: left;
+        margin-top: 16px;
+
+        @media screen and (max-width: 990px) {
+            width: 20%;
+        }
+
+        @media screen and (max-width: 930px) {
+            width: 16%;
+        }
+
+
+
+        img {
+            width: 70%;
+
+            @media screen and (max-width: 990px) {
+                width: 100%;
+            }
+
+        }
+    }
+
+    &-list {
+        float: right;
+        margin-top: 32px;
+
+        @media screen and (max-width: 930px) {
+            margin-top: 22px;
+        }
+
+    }
+
+    &-item {
+        position: relative;
+        float: left;
+        text-align: left;
+        margin-right: 44px;
+        font-size: 14px;
+        font-weight: 700;
+
+        @media screen and (min-width:1900px) {
+            margin-right: 56px;
+        }
+
+        @media screen and (max-width: 1150px) {
+            margin-right: 28px;
+        }
+
+        @media screen and (max-width: 930px) {
+            margin-right: 22px;
+        }
+
+
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        a {
+            position: relative;
+            display: block;
+            line-height: 1.3rem;
+            letter-spacing: 0.2em;
+            transition: .3s;
+            font-size: 13px;
+
+            :hover {
+                opacity: 0.8;
+            }
+
+        }
+
+        &__tell {
+            width: 140px;
+            background: $btn_brown;
+            padding: 12px 0 12px 20px;
+            margin-top: -4px;
+
+            &--flex {
+                display: flex;
+                align-items: center;
+
+                img {
+                    width: 22%;
+                    margin-right: 12px;
+                }
+
+                p {
+                    font-size: 20px;
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+
+
+/*　SP(〜850)　*/
+.ham-gnav {
+    pointer-events: none;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    color: $black;
+    transition: 0.8s all;
+    z-index: 0;
+    background: $white;
+
+
+    &-list {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 90%;
+        padding-top: 80px;
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    &-logo {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 32px;
+
+        & img {
+            width: 50%;
+
+            @media screen and (min-width: 650px) {
+                width: 30%;
+            }
+        }
+    }
+
+    &-item {
+        width: 42%;
+        margin-bottom: 32px;
+        font-size: 12px;
+        border-bottom: 1px solid $black;
+    }
+
+    &-sns {
+        width: 80%;
+        margin-top: 32px;
+        text-align: center;
+
+        & img {
+            margin-right: 4px;
+
+            &:last-child {
+                margin-right: 0;
+                margin-left: 4px;
+            }
+        }
+    }
+
+
+}
+
+
+/* 開く */
+#hamBtn {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 8px;
+    outline: none;
+    border: none;
+    background: $btn_brown;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    transition: 0.8s all;
+
+    @media screen and (min-width: 650px) {
+        width: 60px;
+        height: 60px;
+    }
+
+}
+
+#hamBtn::before,
+#hamBtn::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background-color: $white;
+    transform: translateY(13px);
+    transition: 0.3s ease-in-out;
+}
+
+#hamBtn::before {
+    transform: translate(0, -4px);
+}
+
+#hamBtn::after {
+    transform: translate(0, 4px);
+}
+
+/* 閉じる */
+.open {
+    #hamBtn {
+        z-index: 100;
+
+        &::before {
+            transform: translate(0, 1.5px) rotate(-45deg);
+            color: $black;
+        }
+
+        &:after {
+            transform: translate(0, 0) rotate(45deg);
+            color: $black;
+        }
+    }
+
+    .ham-gnav {
+        pointer-events: auto;
+        opacity: 1;
+    }
+}

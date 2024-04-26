@@ -28,7 +28,7 @@
 <body>
   <!-- ヘッダー -->
   <header class="rp-header">
-    <div class="rp__site__inner _pd-0">
+    <div class="rp-site-inner _pd-0">
       <!-- グローバルナビ PC -->
       <div class="header-gnav__pc">
         <div class="gnav-logo">
@@ -50,7 +50,7 @@
           </li>
           <li class="gnav-item">
             <a href="#topDaily">
-              らぱんだのいちにち<br>
+              お店の１日<br>
               <span>Daily</span>
             </a>
           </li>
@@ -66,12 +66,9 @@
               <span>Information</span>
             </a>
           </li>
-          <li class="gnav-item ">
-            <a href="tel:0774-77-2641" class="gnav-item__tell">
-              <div class="gnav-item__tell--flex">
-                <img src="./dist/images/tell_icon.png" alt="電話 アイコン">
-                <p>TELL</p>
-              </div>
+          <li class="gnav-item__tell">
+            <a href="tel:0774-77-2641">
+              <span>TELL</span>
             </a>
           </li>
         </ul>
@@ -82,7 +79,7 @@
           <nav class="ham-gnav" class="hamburgerGnav">
             <ul class="ham-gnav-list">
               <div class="ham-gnav-logo">
-                <img src="./dist/images/header_logo.png">
+                <img src="./dist/images/ham_logo.png">
               </div>
               <li class="ham-gnav-item">
                 <a href="#">
@@ -102,7 +99,7 @@
               </li>
               <li class="ham-gnav-item">
                 <a href="#topDaily">
-                  らぱんだのいちにち<br>
+                  お店の１日<br>
                   <span>Daily</span>
                 </a>
               </li>
@@ -140,8 +137,8 @@
         </div>
       </section> -->
       <!-- KV -->
-      <section class="rp-top-kv">
-        <div class="rp__site__inner _pd-0">
+      <section class="rp-top-kv _bk-white">
+        <div class="rp-site-inner _pd-0">
           <div class="top-kv">
             <!-- スライダー PC -->
             <div class="slider-kv_pc pc-only">
@@ -179,17 +176,19 @@
         </div>
       </section>
       <!-- About -->
-      <section class="rp-top-about" id="about">
+      <section class="rp-top-about _bk-white" id="about">
         <div class="_anchor-just"></div>
-        <div class="rp__site__inner">
+        <div class="rp-site-inner">
           <div class="top-about">
             <div class="top-about__left fade up-first">
-              <h2 class="top-about-title">
-                About<br>
-                <span class="top-about-title__text">
-                  らぱんだの紹介
-                </span>
-              </h2>
+              <div class="rp-section-title">
+                <h2 class="rp-section-title__main">
+                  About
+                </h2>
+                <p class="rp-section-title__text">
+                  はじめまして！らぱんだです！
+                </p>
+              </div>
               <div class="top-about-sns">
                 <img src="./dist/images/insta_logo_small.png">
                 <img src="./dist/images/face_logo_small.png">
@@ -217,29 +216,30 @@
       </section>
       <!-- concept -->
       <section class="rp-top-concept">
-        <div class="rp__site__inner">
+        <div class="rp-site-inner">
           <div class="top-concept">
             <div class="_anchor-just" id="concept"></div>
-            <h2 class="top-concept-title fade up-first">
-              Concept
-            </h2>
-            <p class="top-concept-title__text fade up-first">
-              らぱんだの3つのこだわり
-            </p>
+            <div class="rp-section-title">
+              <h2 class="rp-section-title__main">
+                Concept
+              </h2>
+              <p class="rp-section-title__text">
+                らぱんだの3つのこだわり
+              </p>
+            </div>
             <div class="top-concept-list">
               <!-- 01 -->
               <div class="top-concept-item fade up-second">
-                <div class="top-concept-item__left">
+                <h3 class="top-concept-item__title">
+                  <span>材料のこだわり</span>
+                </h3>
+                <p class="top-concept-item__text">
+                  材料は、身体に優しく健康に繋がるものを中心に選んでいます。<br>
+                  天然酵母(ルヴァン)や発酵バター、沖縄の黒糖から出来た砂糖、地鶏卵、そしてフランス産の岩塩など数々のこだわりの材料で美味しいパンを焼いています。
+                </p>
+                <div class="top-concept-item__img">
                   <img src="./dist/images/concept_material.jpg" alt="こだわりの材料">
-                </div>
-                <div class="top-concept-item__right">
-                  <h3 class="top-concept-item__title number_01">
-                    <span>材料のこだわり</span>
-                  </h3>
-                  <p class="top-concept-item__text">
-                    材料は、身体に優しく健康に繋がるものを中心に選んでいます。<br>
-                    天然酵母(ルヴァン)や発酵バター、沖縄の黒糖から出来た砂糖、地鶏卵、そしてフランス産の岩塩など数々のこだわりの材料で美味しいパンを焼いています。
-                  </p>
+                  <img src="./dist/images/concept_material.jpg" alt="こだわりの材料">
                 </div>
               </div>
 
@@ -313,16 +313,18 @@
       </section>
       <!-- daily -->
       <section class="rp-top-daily">
-        <div class="rp__site__inner">
+        <div class="rp-site-inner">
           <div class="_anchor-just"></div>
           <div class="top-daily">
             <div class="_anchor-just" id="topDaily"></div>
-            <h2 class="top-daily-title fade up-first">
-              Daily
-            </h2>
-            <p class="top-daily-title__text fade up-first">
-              来店おすすめ時間のご紹介
-            </p>
+            <div class="rp-section-title">
+              <h2 class="rp-section-title__main">
+                Daily
+              </h2>
+              <p class="rp-section-title__text">
+                来店おすすめ時間帯のご紹介です
+              </p>
+            </div>
             <!-- スライダー -->
             <div class="slider-daily swiper">
               <div class="swiper-wrapper fade up-second">
@@ -382,16 +384,18 @@
       <!-- news -->
       <section class="rp-top-news" id="news">
         <div class="_anchor-just"></div>
-        <div class="rp__site__inner">
+        <div class="rp-site-inner">
           <div class="top-news">
             <div class="top-news-flex">
               <div class="top-news-left fade up-first">
-                <h2 class="top-news-title">
-                  News<br>
-                  <span class="top-news-title__text">
-                    お知らせ
-                  </span>
-                </h2>
+                <div class="rp-section-title">
+                  <h2 class="rp-section-title__main">
+                    News
+                  </h2>
+                  <p class="rp-section-title__text">
+                    らぱんだからの大切なお知らせ
+                  </p>
+                </div>
                 <a href="./archive.html" class="top-news-link">
                   all view
                 </a>
@@ -437,15 +441,17 @@
       <!-- info -->
       <section class="rp-top-info" id="information">
         <div class="_anchor-just"></div>
-        <div class="rp__site__inner">
+        <div class="rp-site-inner">
           <div class="top-info">
             <div class="top-info-box">
-              <h2 class="top-info-title fade up-first">
-                Information<br>
-                <span class="top-info-title__text">
+              <div class="rp-section-title">
+                <h2 class="rp-section-title__main">
+                  Information
+                </h2>
+                <p class="rp-section-title__text">
                   基本情報
-                </span>
-              </h2>
+                </p>
+              </div>
               <div class="top-info-list fade up-second">
                 <!-- アクセス -->
                 <dl class="top-info-item">
@@ -527,7 +533,7 @@
 
   <!-- フッター -->
   <footer class="rp-footer">
-    <div class="rp__site__inner">
+    <div class="rp-site-inner">
       <div class="footer-sns">
         <img src="./dist/images/insta_logo_white.png">
         <img src="./dist/images/face_logo_white.png">

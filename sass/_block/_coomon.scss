@@ -2,14 +2,11 @@
 基本設定
 ---------------------------------*/
 
-$light_green: #A9B892;
-$green: #9AB176;
-$deep_brown: #A58113;
+$btn_brown: #765D11;
+$title_brown: #987406;
 $normal_brown: #BFB08C;
 $light_brown: #E8D6AB;
-$pink: #FD8A8A;
-$orange: #D68654;
-$blue: #9AC6DD;
+
 $black: #333;
 $white: #fff;
 
@@ -45,7 +42,6 @@ body {
 }
 
 a {
-    transition: opacity .3s;
     text-decoration: none;
 }
 
@@ -93,13 +89,44 @@ li {
 レイアウト
 ---------------------------------*/
 
-.rp__site__inner {
+// インナー
+.rp-site-inner {
     max-width: 1330px;
     width: 100%;
     margin: 0 auto;
     padding: 0 25px;
+
+    @media screen and (max-width: 768px) {
+        padding: 0 10px;
+    }
 }
 
+// セクションタイトル
+.rp-section-title {
+    margin-bottom: 44px;
+    letter-spacing: 0.6rem;
+    color: $title_brown;
+    font-weight: normal;
+    font-family: "Itim", cursive;
+
+    &__main {
+        font-size: 72px;
+
+        @media screen and (max-width: 768px) {
+            font-size: 46px;
+        }
+
+    }
+
+    &__text {
+        font-size: 14px;
+        margin-top: 32px;
+        margin-left: 2px;
+    }
+
+}
+
+// 注意書き
 .rp__site__annotion {
     &__item {
         display: block;
@@ -117,6 +144,14 @@ li {
     }
 }
 
+// 背景白（パララックスが重なる部分）
+._bk-white{
+    position: relative;
+    background: $white;
+    z-index: 1;
+}
+
+// 細かな設定
 ._pd-0 {
     padding: 0;
 }
@@ -124,6 +159,8 @@ li {
 ._mb-0 {
     margin-bottom: 0 !important;
 }
+
+
 
 
 /*--------------------------------

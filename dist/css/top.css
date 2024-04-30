@@ -67,7 +67,7 @@ TOP
 }
 @media screen and (max-width: 768px) {
   .top-kv-title span {
-    left: 6px;
+    left: 12px;
   }
 }
 .top-kv-title span:nth-child(1) {
@@ -148,11 +148,6 @@ About
     width: 45%;
   }
 }
-@media screen and (max-width: 550px) {
-  .top-about-img {
-    top: -10px;
-  }
-}
 
 /*--------------------------------
 Concept
@@ -161,6 +156,12 @@ Concept
   position: relative;
   height: 1800px;
   margin-top: 240px;
+}
+@media screen and (max-width: 768px) {
+  .rp-top-concept {
+    height: 2200px;
+    margin-top: 60px;
+  }
 }
 .rp-top-concept::before {
   z-index: -1;
@@ -174,14 +175,6 @@ Concept
   background-repeat: repeat;
   content: "";
 }
-@media screen and (max-width: 768px) {
-  .rp-top-concept::before {
-    margin-top: 120px;
-    background: url("../../dist/images/concept_bk_sp02.png");
-    background-size: contain;
-    background-repeat: repeat;
-  }
-}
 
 .top-concept-list {
   width: 100%;
@@ -189,6 +182,23 @@ Concept
   border: 1px solid #765D11;
   border-radius: 20px;
   background: #fff;
+}
+@media screen and (max-width: 768px) {
+  .top-concept-list {
+    padding: 24px;
+  }
+}
+.top-concept-item {
+  width: 100%;
+  margin-bottom: 64px;
+}
+.top-concept-item:last-child {
+  margin-bottom: 0;
+}
+@media screen and (max-width: 768px) {
+  .top-concept-item {
+    margin-bottom: 44px;
+  }
 }
 .top-concept-item__title {
   position: relative;
@@ -200,10 +210,60 @@ Concept
 .top-concept-item__title span {
   margin-left: 48px;
 }
+@media screen and (max-width: 768px) {
+  .top-concept-item__title span {
+    margin-left: 32px;
+  }
+}
 .top-concept-item__title::before {
   position: absolute;
   content: "♦︎";
   color: #765D11;
+}
+@media screen and (max-width: 768px) {
+  .top-concept-item__title {
+    font-size: 24px;
+  }
+}
+.top-concept-item__text {
+  margin: 24px 0;
+  line-height: 1.6rem;
+}
+@media screen and (max-width: 768px) {
+  .top-concept-item__text {
+    margin: 16px 0;
+  }
+}
+.top-concept-item__img {
+  display: flex;
+  justify-content: space-between;
+  width: 49%;
+}
+@media screen and (max-width: 768px) {
+  .top-concept-item__img {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+.top-concept-item__img img {
+  border-radius: 20px;
+}
+.top-concept-item__img img:nth-child(1) {
+  margin-right: 8px;
+}
+@media screen and (max-width: 768px) {
+  .top-concept-item__img img:nth-child(1) {
+    margin-right: 0;
+    margin-bottom: 12px;
+  }
+}
+.top-concept-item__img img:nth-child(2) {
+  margin-left: 8px;
+}
+@media screen and (max-width: 768px) {
+  .top-concept-item__img img:nth-child(2) {
+    margin-left: 0;
+  }
 }
 .top-concept-modal {
   display: flex;

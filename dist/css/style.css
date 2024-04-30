@@ -82,7 +82,7 @@ li {
 }
 
 /*--------------------------------
-レイアウト
+共通パーツ
 ---------------------------------*/
 .rp-site-inner {
   width: 100%;
@@ -129,6 +129,90 @@ li {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.rp-btn-white {
+  display: block;
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 32px;
+  padding: 18px 30px 18px 20px;
+  border: 1px solid #765D11;
+  border-radius: 30px;
+  background: #fff;
+  color: #765D11;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .rp-btn-white {
+    width: 100%;
+  }
+}
+.rp-btn-white::after {
+  display: block;
+  position: absolute;
+  top: calc(50% - 5px);
+  right: 40px;
+  width: 40px;
+  height: 5px;
+  transform: skew(45deg);
+  border-right: 2px solid #765D11;
+  border-bottom: 1px solid #765D11;
+  content: "";
+  transition: 0.3s;
+}
+.rp-btn-white:hover {
+  background: #765D11;
+  color: #fff;
+}
+.rp-btn-white:hover::after {
+  right: 30px;
+  width: 50px;
+  border-right: 2px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.rp-btn-brown {
+  display: block;
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 32px;
+  padding: 18px 30px 18px 20px;
+  border: 1px solid #765D11;
+  border-radius: 30px;
+  background: #765D11;
+  color: #fff;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .rp-btn-brown {
+    width: 100%;
+  }
+}
+.rp-btn-brown::after {
+  display: block;
+  position: absolute;
+  top: calc(50% - 5px);
+  right: 40px;
+  width: 40px;
+  height: 5px;
+  transform: skew(45deg);
+  border-right: 2px solid #fff;
+  border-bottom: 1px solid #fff;
+  content: "";
+  transition: 0.3s;
+}
+.rp-btn-brown:hover {
+  background: #fff;
+  color: #765D11;
+}
+.rp-btn-brown:hover::after {
+  right: 30px;
+  width: 50px;
+  border-right: 2px solid #765D11;
+  border-bottom: 1px solid #765D11;
 }
 
 ._bk-white {

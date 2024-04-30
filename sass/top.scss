@@ -73,7 +73,7 @@ TOP
             z-index: 3;
 
             @media screen and (max-width: 768px) {
-                left: 6px;
+                left: 12px;
             }
         }
 
@@ -160,9 +160,6 @@ About
             right: 0;
         }
 
-        @media screen and (max-width: 550px) {
-            top: -10px;
-        }
     }
 }
 
@@ -173,6 +170,11 @@ Concept
     position: relative;
     height: 1800px;
     margin-top: 240px;
+
+    @media screen and (max-width: 768px) {
+        margin-top: 60px;
+        height: 2200px;
+    }
 
     &::before {
         content: '';
@@ -186,13 +188,6 @@ Concept
         background-size: cover;
         background-repeat: repeat;
 
-
-        @media screen and (max-width: 768px) {
-            background: url('../../dist/images/concept_bk_sp02.png');
-            background-size: contain;
-            background-repeat: repeat;
-            margin-top: 120px;
-        }
     }
 
 }
@@ -205,9 +200,23 @@ Concept
         background: $white;
         border-radius: 20px;
         padding: 75px;
+
+        @media screen and (max-width: 768px) {
+            padding: 24px;
+        }
     }
 
     &-item {
+        width: 100%;
+        margin-bottom: 64px;
+
+        &:last-child{
+            margin-bottom: 0;
+        }
+
+        @media screen and (max-width: 768px) {
+            margin-bottom: 44px;
+        }
 
         &__title{
             position: relative;
@@ -218,6 +227,10 @@ Concept
 
             & span{
                 margin-left: 48px;
+
+                @media screen and (max-width: 768px) {
+                    margin-left: 32px;
+                }
             }
 
 
@@ -225,6 +238,52 @@ Concept
                 content: '♦︎';
                 position: absolute;
                 color: $btn_brown;
+            }
+
+            @media screen and (max-width: 768px) {
+                font-size: 24px;
+            }
+
+        }
+
+        &__text{
+            margin: 24px 0;
+            line-height: 1.6rem;
+
+            @media screen and (max-width: 768px) {
+                margin: 16px 0;
+            }
+        }
+
+        &__img{
+            width: 49%;
+            display: flex;
+            justify-content: space-between;
+
+            @media screen and (max-width: 768px) {
+                width: 100%;
+                flex-wrap: wrap;
+            }
+
+            & img{
+                border-radius: 20px;
+            }
+
+            & img:nth-child(1){
+                margin-right: 8px;
+
+                @media screen and (max-width: 768px) {
+                    margin-right: 0;
+                    margin-bottom: 12px;
+                }
+            }
+
+            & img:nth-child(2){
+                margin-left: 8px;
+
+                @media screen and (max-width: 768px) {
+                    margin-left: 0;
+                }
             }
 
         }

@@ -86,7 +86,7 @@ li {
 }
 
 /*--------------------------------
-レイアウト
+共通パーツ
 ---------------------------------*/
 
 // インナー
@@ -144,8 +144,98 @@ li {
     }
 }
 
+// ボタン(白)
+.rp-btn-white {
+    display: block;
+    position: relative;
+    background: $white;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 32px;
+    padding: 18px 30px 18px 20px;
+    text-align: center;
+    color: $btn_brown;
+    border: 1px solid $btn_brown;
+    border-radius: 30px;
+
+    @media screen and (max-width: 768px) {
+        width: 100%;
+    }
+
+    &::after {
+        display: block;
+        position: absolute;
+        content: "";
+        top: calc(50% - 5px);
+        right: 40px;
+        width: 40px;
+        height: 5px;
+        border-right: 2px solid $btn_brown;
+        border-bottom: 1px solid $btn_brown;
+        transform: skew(45deg);
+        transition: .3s;
+    }
+
+    &:hover {
+        background: $btn_brown;
+        color: $white;
+
+        &::after {
+            border-right: 2px solid $white;
+            border-bottom: 1px solid $white;
+            right: 30px;
+            width: 50px;
+        }
+    }
+}
+
+// ボタン(茶色)
+.rp-btn-brown {
+    display: block;
+    position: relative;
+    background: $btn_brown;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 32px;
+    padding: 18px 30px 18px 20px;
+    text-align: center;
+    color: $white;
+    border: 1px solid $btn_brown;
+    border-radius: 30px;
+
+    @media screen and (max-width: 768px) {
+        width: 100%;
+    }
+
+    &::after {
+        display: block;
+        position: absolute;
+        content: "";
+        top: calc(50% - 5px);
+        right: 40px;
+        width: 40px;
+        height: 5px;
+        border-right: 2px solid $white;
+        border-bottom: 1px solid $white;
+        transform: skew(45deg);
+        transition: .3s;
+    }
+
+    &:hover {
+        background: $white;
+        color: $btn_brown;
+
+        &::after {
+            border-right: 2px solid $btn_brown;
+            border-bottom: 1px solid $btn_brown;
+            right: 30px;
+            width: 50px;
+        }
+    }
+}
+
 // 背景白（パララックスが重なる部分）
-._bk-white{
+._bk-white {
     position: relative;
     background: $white;
     z-index: 1;

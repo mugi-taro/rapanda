@@ -168,7 +168,7 @@ Concept
 ---------------------------------*/
 .rp-top-concept {
     position: relative;
-    height: 1800px;
+    height: 2000px;
     margin-top: 240px;
 
     @media screen and (max-width: 768px) {
@@ -222,7 +222,7 @@ Concept
             position: relative;
             font-size: 36px;
             color: $btn_brown;
-            letter-spacing: 0.8rem;
+            letter-spacing: 0.4rem;
             font-weight: 500;
 
             & span{

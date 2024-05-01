@@ -154,7 +154,7 @@ Concept
 ---------------------------------*/
 .rp-top-concept {
   position: relative;
-  height: 1800px;
+  height: 2000px;
   margin-top: 240px;
 }
 @media screen and (max-width: 768px) {
@@ -205,7 +205,7 @@ Concept
   color: #765D11;
   font-weight: 500;
   font-size: 36px;
-  letter-spacing: 0.8rem;
+  letter-spacing: 0.4rem;
 }
 .top-concept-item__title span {
   margin-left: 48px;

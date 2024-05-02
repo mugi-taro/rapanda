@@ -1,11 +1,8 @@
-$light_green: #A9B892;
-$green: #9AB176;
-$deep_brown: #A58113;
+$btn_brown: #765D11;
+$title_brown: #987406;
 $normal_brown: #BFB08C;
 $light_brown: #E8D6AB;
-$pink: #FD8A8A;
-$orange: #D68654;
-$blue: #9AC6DD;
+
 $black: #333;
 $white: #fff;
 
@@ -26,16 +23,14 @@ Footer
 
 .footer {
     &-sns {
-        margin: 0 calc(50% - 50vw);
-        width: 100vw;
         position: relative;
         z-index: 3;
         text-align: center;
-        padding-top: 24px;
+        padding: 24px 0;
         background: $light_brown;
 
-        @media screen and (max-width: 550px) {
-            padding-top: 12px;
+        @media screen and (max-width: 768px) {
+            padding: 12px 0;
         }
 
         & img {
@@ -49,27 +44,23 @@ Footer
     }
 
     &-list {
-        padding: 52px 25px 0;
+        padding: 32px 0;
         background: $normal_brown;
-    }
 
-    &-logo {
-        width: 10%;
-
-        @media screen and (max-width: 550px) {
-            width: 30%;
+        @media screen and (max-width: 768px) {
+            padding: 24px 0 8px;
         }
     }
 
     &-text {
-        padding: 24px 0;
+        padding-top: 24px;
         color: $white;
         font-size: 12px;
-        font-weight: 400;
-        letter-spacing: 0.2rem;
+        font-weight: 500;
+        letter-spacing: 0.1rem;
 
-        @media screen and (max-width: 550px) {
-            padding: 18px 0;
+        @media screen and (max-width: 768px) {
+            padding: 16px 0;
         }
     }
 }

@@ -86,11 +86,11 @@ About
 
 ---------------------------------*/
 .rp-top-about {
-  padding: 240px 0 80px 0;
+  padding: 240px 0 120px 0;
 }
 @media screen and (max-width: 768px) {
   .rp-top-about {
-    padding-top: 120px 0 40px 0;
+    padding: 120px 0 60px 0;
   }
 }
 
@@ -331,11 +331,11 @@ Daily
 }
 
 .top-daily {
-  padding: 128px 0;
+  padding: 128px 0 48px;
 }
 @media screen and (max-width: 768px) {
   .top-daily {
-    padding: 64px 0;
+    padding: 64px 0 24px;
   }
 }
 .top-daily-img {
@@ -495,12 +495,12 @@ News
 
 ---------------------------------*/
 .rp-top-news {
-  padding: 240px 0;
+  padding: 240px 0 280px 0;
   background: #fff;
 }
 @media screen and (max-width: 768px) {
   .rp-top-news {
-    padding: 60px 0;
+    padding: 60px 0 100px 0;
   }
 }
 

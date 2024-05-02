@@ -489,15 +489,13 @@ Footer
 .footer-sns {
   z-index: 3;
   position: relative;
-  width: 100vw;
-  margin: 0 calc(50% - 50vw);
-  padding-top: 24px;
+  padding: 24px 0;
   background: #E8D6AB;
   text-align: center;
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 768px) {
   .footer-sns {
-    padding-top: 12px;
+    padding: 12px 0;
   }
 }
 .footer-sns img {
@@ -508,26 +506,23 @@ Footer
   margin-left: 12px;
 }
 .footer-list {
-  padding: 52px 25px 0;
+  padding: 32px 0;
   background: #BFB08C;
 }
-.footer-logo {
-  width: 10%;
-}
-@media screen and (max-width: 550px) {
-  .footer-logo {
-    width: 30%;
+@media screen and (max-width: 768px) {
+  .footer-list {
+    padding: 24px 0 8px;
   }
 }
 .footer-text {
-  padding: 24px 0;
+  padding-top: 24px;
   color: #fff;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 12px;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.1rem;
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 768px) {
   .footer-text {
-    padding: 18px 0;
+    padding: 16px 0;
   }
 }

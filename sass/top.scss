@@ -173,7 +173,11 @@ Concept
 
     @media screen and (max-width: 768px) {
         margin-top: 60px;
-        height: 2200px;
+        height: 3600px;
+    }
+
+    @media screen and (max-width: 500px) {
+        height: 2400px;
     }
 
     &::before {
@@ -183,7 +187,7 @@ Concept
         left: 0;
         width: 100%;
         height: 100vh;
-        z-index: -1;
+        z-index: -5;
         background: url('../../dist/images/concept_bk_pc02.png');
         background-size: cover;
         background-repeat: repeat;
@@ -210,7 +214,7 @@ Concept
         width: 100%;
         margin-bottom: 64px;
 
-        &:last-child{
+        &:last-child {
             margin-bottom: 0;
         }
 
@@ -218,14 +222,14 @@ Concept
             margin-bottom: 44px;
         }
 
-        &__title{
+        &__title {
             position: relative;
             font-size: 36px;
             color: $btn_brown;
             letter-spacing: 0.4rem;
             font-weight: 500;
 
-            & span{
+            & span {
                 margin-left: 48px;
 
                 @media screen and (max-width: 768px) {
@@ -234,7 +238,7 @@ Concept
             }
 
 
-            &::before{
+            &::before {
                 content: '♦︎';
                 position: absolute;
                 color: $btn_brown;
@@ -246,7 +250,7 @@ Concept
 
         }
 
-        &__text{
+        &__text {
             margin: 24px 0;
             line-height: 1.6rem;
 
@@ -255,7 +259,7 @@ Concept
             }
         }
 
-        &__img{
+        &__img {
             width: 49%;
             display: flex;
             justify-content: space-between;
@@ -265,11 +269,11 @@ Concept
                 flex-wrap: wrap;
             }
 
-            & img{
+            & img {
                 border-radius: 20px;
             }
 
-            & img:nth-child(1){
+            & img:nth-child(1) {
                 margin-right: 8px;
 
                 @media screen and (max-width: 768px) {
@@ -278,7 +282,7 @@ Concept
                 }
             }
 
-            & img:nth-child(2){
+            & img:nth-child(2) {
                 margin-left: 8px;
 
                 @media screen and (max-width: 768px) {
@@ -288,7 +292,7 @@ Concept
 
         }
     }
-    
+
 
     &-modal {
         display: flex;
@@ -344,16 +348,13 @@ Daily
     background: url('../../dist/images/yellow_bk_pc.jpg');
     background-size: cover;
     background-repeat: repeat;
-    margin-top: 320px;
+    margin-top: 240px;
 
     @media screen and (max-width: 768px) {
         background: url('../../dist/images/yellow_bk_sp.jpg');
         background-size: contain;
         background-repeat: repeat;
-    }
-
-    @media screen and (max-width: 550px) {
-        margin-top: 160px;
+        margin-top: 60px;
     }
 }
 
@@ -361,12 +362,17 @@ Daily
     padding: 128px 0;
 
     @media screen and (max-width: 768px) {
-        padding: 84px 0;
+        padding: 64px 0;
+    }
+
+    &-img {
+        border-radius: 20px 20px 20px 135px;
     }
 
     &-write {
         display: none;
         margin: 0 auto;
+        margin-top: -20px;
 
         @media screen and (max-width: 768px) {
             width: 100%;
@@ -374,43 +380,47 @@ Daily
 
         &__number {
             color: $title_brown;
-            font-size: 62px;
+            font-size: 64px;
             font-weight: normal;
             font-family: "Itim", cursive;
 
-            @media screen and (max-width: 550px) {
+            @media screen and (max-width: 768px) {
                 width: 100%;
+                font-size: 48px;
             }
         }
 
         &__title {
-            margin-bottom: 24px;
+            margin: 24px 0 24px 32px;
             color: $title_brown;
             font-size: 28px;
             font-weight: 500;
-            letter-spacing: 0.6rem;
+            letter-spacing: 0.2rem;
+
+            @media screen and (max-width: 768px) {
+                margin: 12px 0;
+                font-size: 26px;
+            }
 
             &--time {
                 float: right;
                 font-size: 26px;
 
                 @media screen and (max-width: 768px) {
-                    margin-left: 6px;
+                    line-height: 4rem;
                     float: unset;
                     font-size: 24px;
                 }
             }
 
-            @media screen and (max-width: 768px) {
-                margin-bottom: 12px;
-                font-size: 26px;
-            }
         }
 
         &__text {
+            margin-left: 32px;
             line-height: 1.8rem;
 
             @media screen and (max-width: 768px) {
+                margin-left: 0;
                 line-height: 2rem;
             }
         }
@@ -427,8 +437,8 @@ Daily
     margin: 0 auto;
     padding: 0 50px;
 
-    @media screen and (max-width: 550px) {
-        min-height: 700px;
+    @media screen and (max-width: 768px) {
+        min-height: 650px;
         padding: 0 20px;
     }
 }
@@ -509,21 +519,16 @@ News
 
 ---------------------------------*/
 .rp-top-news {
-    margin-top: 320px;
+    padding: 240px 0;
+    background: $white;
 
-    @media screen and (max-width: 550px) {
-        margin-top: 160px;
+    @media screen and (max-width: 768px) {
+        padding: 60px 0;
     }
 }
 
 .top-news {
     position: relative;
-    width: 90%;
-    margin: 0 auto;
-
-    @media screen and (max-width: 550px) {
-        width: 96%;
-    }
 
     &-flex {
         display: flex;
@@ -535,7 +540,7 @@ News
     &-right {
         width: 60%;
 
-        @media screen and (max-width: 550px) {
+        @media screen and (max-width: 768px) {
             width: 100%;
         }
     }
@@ -549,7 +554,7 @@ News
             min-height: 360px;
         }
 
-        @media screen and (max-width: 550px) {
+        @media screen and (max-width: 768px) {
             min-height: 120px;
             width: 100%;
             margin-bottom: 44px;
@@ -573,16 +578,16 @@ News
 
     &-img {
         position: absolute;
-        top: 32%;
+        top: 40%;
         left: 6%;
-        width: 25%;
+        width: 22%;
 
         @media screen and (min-width: 1200px) {
             width: 15%;
             left: 8%;
         }
 
-        @media screen and (max-width: 550px) {
+        @media screen and (max-width: 768px) {
             top: 0;
             right: 8%;
             left: unset;
@@ -609,7 +614,7 @@ News
             color: #707070;
             font-size: 14px;
 
-            @media screen and (max-width: 550px) {
+            @media screen and (max-width: 768px) {
                 margin-right: 24px;
             }
         }
@@ -622,22 +627,24 @@ Info
 ---------------------------------*/
 .rp-top-info {
     position: relative;
-    margin-top: 320px;
+    height: 1800px;
 
-    @media screen and (max-width: 550px) {
-        margin-top: 160px;
+    @media screen and (max-width: 768px) {
+        height: 2000px;
     }
+
 
     &::before {
         content: '';
         position: absolute;
+        z-index: 0;
         width: 100%;
         height: 650px;
         background: url('../../dist/images/info_bk_pc.jpg');
         background-repeat: no-repeat;
         background-size: contain;
 
-        @media screen and (max-width: 550px) {
+        @media screen and (max-width: 768px) {
             height: 450px;
             background: url('../../dist/images/info_bk_sp.jpg');
             background-repeat: no-repeat;
@@ -649,51 +656,30 @@ Info
         content: '';
         position: absolute;
         top: 0;
-        z-index: -10;
+        z-index: -1;
         width: 100%;
-        height: 1250px;
+        height: 1800px;
         background: url('../../dist/images/yellow_bk_pc.jpg');
         background-repeat: no-repeat;
         background-size: cover;
 
-        @media screen and (max-width: 1200px) {
-            height: 1350px;
-        }
-
-        @media screen and (max-width: 900px) {
-            height: 1400px;
-        }
 
         @media screen and (max-width: 768px) {
-            height: 1500px;
+            height: 2000px;
         }
 
-
-        @media screen and (max-width: 550px) {
-            height: 1400px;
-        }
-
-        @media screen and (max-width: 400px) {
-            height: 1450px;
-        }
 
     }
 }
 
 .top-info {
-    width: 90%;
-    margin: 0 auto;
-
-    @media screen and (max-width: 550px) {
-        width: 96%;
-    }
 
     &-box {
         position: relative;
         top: 180px;
         z-index: 3;
         border-radius: 30px;
-        padding: 112px 70px;
+        padding: 75px;
         background: $white;
 
         @media screen and (max-width: 880px) {
@@ -702,17 +688,15 @@ Info
 
         @media screen and (max-width: 768px) {
             top: 100px;
-            padding: 96px 60px;
+            padding: 24px;
         }
 
         @media screen and (max-width: 630px) {
             top: 60px;
-            padding: 80px 50px;
         }
 
         @media screen and (max-width: 550px) {
             top: 140px;
-            padding: 48px 30px;
         }
     }
 
@@ -723,8 +707,7 @@ Info
     }
 
     &-item {
-        margin: 44px 0;
-        padding: 16px 0;
+        margin: 88px 0;
 
         &:last-child {
             margin: 44px 0 0;
@@ -736,8 +719,11 @@ Info
             font-size: 22px;
             font-weight: bold;
             line-height: 1rem;
+            letter-spacing: 0.6rem;
+            margin-top: 6px;
 
             @media screen and (max-width: 768px) {
+                margin-top: 0;
                 width: auto;
                 float: none;
             }
@@ -748,10 +734,10 @@ Info
             font-size: 12px;
             line-height: 1.2rem;
             margin-left: 2px;
+            letter-spacing: 0.08rem;
         }
 
         &__text {
-            margin-top: -13px;
             margin-left: 240px;
             line-height: 2rem;
             letter-spacing: 0.3rem;
@@ -764,69 +750,36 @@ Info
                 margin-left: 0;
             }
 
-            &--just {
-                @extend .top-info-item__text;
-                margin-top: -7px;
-
-                @media screen and (max-width: 768px) {
-                    margin-top: 24px;
-                }
-
-            }
         }
 
-        &-flex {
-            display: flex;
-            justify-content: flex-start;
-
-            @media screen and (max-width: 1100px) {
-                flex-wrap: wrap;
-            }
-
-            margin: 32px 0;
-
+        &-traffic {
+            margin: 44px 0;
             width: 100%;
 
             &__item {
-                display: flex;
-                align-items: flex-start;
-                width: 50%;
-                margin-right: 24px;
+                margin-bottom: 32px;
 
                 &:last-child {
-                    margin-right: 0;
-                }
-
-                @media screen and (max-width: 1100px) {
-                    width: 100%;
-                    margin-right: 0;
-
-                    &:last-child {
-                        margin-top: 24px;
-                    }
-                }
-
-            }
-
-            &__img {
-                width: 15%;
-
-                @media screen and (max-width: 875px) {
-                    width: 18%;
-                }
-
-                @media screen and (max-width: 768px) {
-                    width: 15%;
+                    margin-bottom: 0;
                 }
             }
 
-            &__img img {
-                width: 100%;
+            &__title {
+                text-decoration: underline;
+                margin-bottom: 8px;
+                font-size: 16px;
             }
+
+            &__explain {
+                display: flex;
+                align-items: center;
+                margin-left: -10px;
+
+            }
+
 
             &__text {
                 width: 100%;
-                margin-top: -4px;
                 margin-left: 12px;
                 font-size: 12px;
                 font-weight: 500;
@@ -836,54 +789,78 @@ Info
         }
 
         & a {
-            float: right;
+            display: block;
+            text-align: right;
             font-size: 18px;
             letter-spacing: 0.2rem;
             text-decoration: underline;
 
             &:hover {
-                opacity: 0.8;
+                opacity: 0.6;
             }
 
         }
     }
 
+
     &-tell {
-        display: block;
-        width: 70%;
-        margin: 0 auto;
+        position: relative;
+        min-height: 80px;
         margin-top: 44px;
 
-        @media screen and (max-width: 860px) {
-            width: 100%;
+        &__btn {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 70%;
+            height: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 60px;
+            margin-top: 0;
+
+            @media screen and (max-width: 768px) {
+                width: 100%;
+            }
+
+            &:before {
+                content: '';
+                display: inline;
+                margin-right: 16px;
+                width: 38px;
+                height: 38px;
+                background: url('../../dist/images/tell_icon.png');
+                background-repeat: no-repeat;
+                background-size: contain;
+    
+            }
+
+            &:after{
+                display: none;
+            }
+
+            &:hover {
+
+                &::before {
+                    background: url('../../dist/images/tell_icon_brown.png');
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                }
+
+            }
         }
 
-        background: $btn_brown;
-        color: $white;
-        padding: 32px 0 16px;
-        padding-left: 54px;
-
-        @media screen and (max-width: 550px) {
-            padding: 24px 0 8px;
-            padding-left: 54px;
-        }
-
-        @media screen and (max-width: 400px) {
-            padding-left: 46px;
-        }
 
         &__text {
-            margin-top: -18px;
-            text-align: center;
             font-size: 12px;
             line-height: 1.8rem;
             letter-spacing: 0.18rem;
-
         }
 
 
         &__number {
-            position: relative;
             font-size: 32px;
             font-family: "Itim", cursive;
             letter-spacing: 0.3rem;
@@ -894,28 +871,6 @@ Info
 
             @media screen and (max-width: 400px) {
                 font-size: 22px;
-            }
-
-            &:before {
-                content: '';
-                display: inline;
-                position: absolute;
-                top: -9px;
-                left: -23%;
-                width: 38px;
-                height: 38px;
-                background: url('../../dist/images/tell_icon.png');
-                background-repeat: no-repeat;
-                background-size: contain;
-
-                @media screen and (max-width: 550px) {
-                    top: -15px;
-                }
-
-                @media screen and (max-width: 400px) {
-                    left: -22%;
-                }
-
             }
         }
 

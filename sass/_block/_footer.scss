@@ -16,32 +16,23 @@ Footer
 ---------------------------------*/
 .rp-footer {
     position: relative;
-    margin: 520px 0 0;
-    background: $normal_brown;
-    z-index: -10;
+    padding-top: 240px;
+    background: $white;
 
     @media screen and (max-width: 768px) {
-        margin: 380px 0 0;
-    }
-
-    &::before {
-        content: '';
-        position: absolute;
-        z-index: -9;
-        width: 100%;
-        height: 80px;
-        background: $light_brown;
-
-        @media screen and (max-width: 550px) {
-            height: 60px;
-        }
+        padding-top: 120px;
     }
 }
 
 .footer {
     &-sns {
+        margin: 0 calc(50% - 50vw);
+        width: 100vw;
+        position: relative;
+        z-index: 3;
         text-align: center;
         padding-top: 24px;
+        background: $light_brown;
 
         @media screen and (max-width: 550px) {
             padding-top: 12px;
@@ -58,11 +49,8 @@ Footer
     }
 
     &-list {
-        margin-top: 52px;
-
-        @media screen and (max-width: 550px) {
-            margin-top: 32px;
-        }
+        padding: 52px 25px 0;
+        background: $normal_brown;
     }
 
     &-logo {

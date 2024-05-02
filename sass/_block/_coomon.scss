@@ -74,16 +74,16 @@ li {
     }
 }
 
-._anchor-just {
-    display: block;
-    padding-top: 30px;
-    margin-top: -30px;
+// ._anchor-just {
+//     display: block;
+//     padding-top: 30px;
+//     margin-top: -30px;
 
-    @media screen and (max-width: 768px) {
-        padding-top: 10px;
-        margin-top: -10px;
-    }
-}
+//     @media screen and (max-width: 768px) {
+//         padding-top: 10px;
+//         margin-top: -10px;
+//     }
+// }
 
 /*--------------------------------
 共通パーツ
@@ -233,6 +233,14 @@ li {
 
 ._mb-0 {
     margin-bottom: 0 !important;
+}
+
+._mt-10{
+    margin-top: 10px !important;
+}
+
+._text-center{
+    text-align: center;
 }
 
 

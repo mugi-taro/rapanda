@@ -69,18 +69,6 @@ li {
   }
 }
 
-._anchor-just {
-  display: block;
-  margin-top: -30px;
-  padding-top: 30px;
-}
-@media screen and (max-width: 768px) {
-  ._anchor-just {
-    margin-top: -10px;
-    padding-top: 10px;
-  }
-}
-
 /*--------------------------------
 共通パーツ
 ---------------------------------*/
@@ -209,6 +197,14 @@ li {
 
 ._mb-0 {
   margin-bottom: 0 !important;
+}
+
+._mt-10 {
+  margin-top: 10px !important;
+}
+
+._text-center {
+  text-align: center;
 }
 
 /*--------------------------------
@@ -480,32 +476,23 @@ Footer
 
 ---------------------------------*/
 .rp-footer {
-  z-index: -10;
   position: relative;
-  margin: 520px 0 0;
-  background: #BFB08C;
+  padding-top: 240px;
+  background: #fff;
 }
 @media screen and (max-width: 768px) {
   .rp-footer {
-    margin: 380px 0 0;
-  }
-}
-.rp-footer::before {
-  z-index: -9;
-  position: absolute;
-  width: 100%;
-  height: 80px;
-  background: #E8D6AB;
-  content: "";
-}
-@media screen and (max-width: 550px) {
-  .rp-footer::before {
-    height: 60px;
+    padding-top: 120px;
   }
 }
 
 .footer-sns {
+  z-index: 3;
+  position: relative;
+  width: 100vw;
+  margin: 0 calc(50% - 50vw);
   padding-top: 24px;
+  background: #E8D6AB;
   text-align: center;
 }
 @media screen and (max-width: 550px) {
@@ -521,12 +508,8 @@ Footer
   margin-left: 12px;
 }
 .footer-list {
-  margin-top: 52px;
-}
-@media screen and (max-width: 550px) {
-  .footer-list {
-    margin-top: 32px;
-  }
+  padding: 52px 25px 0;
+  background: #BFB08C;
 }
 .footer-logo {
   width: 10%;

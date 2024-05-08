@@ -142,10 +142,10 @@ About
 }
 @media screen and (max-width: 768px) {
   .top-about-img {
-    top: -50px;
+    top: 80px;
     right: 0;
     left: unset;
-    width: 45%;
+    width: 40%;
   }
 }
 

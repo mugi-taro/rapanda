@@ -69,6 +69,18 @@ li {
   }
 }
 
+._anchor-just {
+  display: block;
+  margin-top: -40px;
+  padding-top: 40px;
+}
+@media screen and (max-width: 768px) {
+  ._anchor-just {
+    margin-top: -20px;
+    padding-top: 20px;
+  }
+}
+
 /*--------------------------------
 共通パーツ
 ---------------------------------*/
@@ -193,6 +205,10 @@ li {
 
 ._pd-0 {
   padding: 0;
+}
+
+._pt-0 {
+  padding-top: 0 !important;
 }
 
 ._mb-0 {

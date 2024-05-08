@@ -19,20 +19,20 @@
   <meta name="twitter:image" content="">
   <script src="https://cdn.jsdelivr.net/npm/viewport-extra@2.0.1/dist/iife/viewport-extra.min.js" defer></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-  <link href="./css/reset.css" media="all" rel="stylesheet" type="text/css" />
-  <link href="./css/style.css" media="all" rel="stylesheet" type="text/css" />
-  <link href="./css/page.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="./dist/css/reset.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="./dist/css/style.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="./dist/css/page.css" media="all" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
   <!-- ヘッダー -->
   <header class="rp-header">
-    <div class="rp__site__inner">
+    <div class="rp-site-inner _pd-0">
       <!-- グローバルナビ PC -->
       <div class="header-gnav__pc">
         <div class="gnav-logo">
           <a href="#">
-            <img src="./img/header_logo.png">
+            <img src="./dist/images/header_logo.png">
           </a>
         </div>
         <ul class="gnav-list">
@@ -49,7 +49,7 @@
           </li>
           <li class="gnav-item">
             <a href="#topDaily">
-              らぱんだのいちにち<br>
+              お店の１日<br>
               <span>Daily</span>
             </a>
           </li>
@@ -65,12 +65,9 @@
               <span>Information</span>
             </a>
           </li>
-          <li class="gnav-item">
-            <a href="" class="gnav-item__tell">
-              <div class="gnav-item__tell--flex">
-                <img src="./img/tell_icon.png" alt="電話 アイコン">
-                <p>TELL</p>
-              </div>
+          <li class="gnav-item__tell">
+            <a href="tel:0774-77-2641">
+              <span>TELL</span>
             </a>
           </li>
         </ul>
@@ -81,7 +78,7 @@
           <nav class="ham-gnav" class="hamburgerGnav">
             <ul class="ham-gnav-list">
               <div class="ham-gnav-logo">
-                <img src="./img/header_logo.png">
+                <img src="./dist/images/ham_logo.png">
               </div>
               <li class="ham-gnav-item">
                 <a href="#">
@@ -101,7 +98,7 @@
               </li>
               <li class="ham-gnav-item">
                 <a href="#topDaily">
-                  らぱんだのいちにち<br>
+                  お店の１日<br>
                   <span>Daily</span>
                 </a>
               </li>
@@ -118,8 +115,10 @@
                 </a>
               </li>
               <div class="ham-gnav-sns">
-                <img src="./img/insta_logo_small.png">
-                <img src="./img/face_logo_small.png">
+                <a href="https://www.instagram.com/rapinda.pan/" target="_blank">
+                  <img src="./dist/images/insta_logo_small.png">
+                </a>
+                <img src="./dist/images/face_logo_small.png">
               </div>
             </ul>
           </nav>
@@ -134,18 +133,20 @@
     <article>
       <!-- top -->
       <section class="rp-under-top">
-        <div class="rp__site__inner _pd-0">
-          <h1 class="under-top__title">
-            News<br>
-            <span class="under-top__title--sub">
-              お店のお知らせ紹介
-            </span>
-          </h1>
+        <div class="rp-site-inner">
+          <div class="rp-section-title">
+            <h2 class="rp-section-title__main">
+              News
+            </h2>
+            <p class="rp-section-title__text">
+              らぱんだからのお知らせ
+            </p>
+          </div>
         </div>
       </section>
 
       <section class="rp-news-section">
-        <div class="rp__site__inner">
+        <div class="rp-site-inner">
           <ul class="rp-news-list">
             <li class="rp-news-item">
               <a href="">
@@ -184,29 +185,31 @@
 
   <!-- フッター -->
   <footer class="rp-footer">
-    <div class="rp__site__inner">
-      <div class="footer-sns">
-        <img src="./img/insta_logo_white.png">
-        <img src="./img/face_logo_white.png">
-      </div>
-      <div class="footer-list">
-        <img src="./img/footer_logo.png" class="footer-logo">
+    <div class="footer-sns">
+      <a href="https://www.instagram.com/rapinda.pan/" target="_blank"><img
+          src="./dist/images/insta_logo_white.png"></a>
+      <img src="./dist/images/face_logo_white.png">
+    </div>
+    <div class="footer-list">
+      <div class="rp-site-inner">
+        <img src="./dist/images/footer_logo.png" class="footer-logo">
         <p class="footer-text">
-          住　　所：京都府京都市1-1<br>
-          営業時間：9:00〜18:00<br>
+          住　　所：京都府宇治市神明宮北28-7<br>
+          営業時間：9:00〜17:30<br>
           <br>
-          &#169; ORGANIC Bakery All Rights Reserved.
+          &#169;パン工房LA PANDA All Rights Reserved.
         </p>
       </div>
+    </div>
     </div>
   </footer>
 
   <!-- JS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  <script src="./js/modal.js"></script>
-  <script type='text/javascript' src="./js/daily_slider.js"></script>
-  <script type='text/javascript' src="./js/script.js"></script>
+  <script type='text/javascript' src="./dist/js/modal.js"></script>
+  <script type='text/javascript' src="./dist/js/top_slider.js"></script>
+  <script type='text/javascript' src="./dist/js/script.js"></script>
 </body>
 
 </html>

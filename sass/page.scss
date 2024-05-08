@@ -1,90 +1,43 @@
-
-
-$light_green: #A9B892;
-$green: #9AB176;
-$deep_brown: #A58113;
+$btn_brown: #765D11;
+$title_brown: #987406;
 $normal_brown: #BFB08C;
 $light_brown: #E8D6AB;
-$pink: #FD8A8A;
-$orange: #D68654;
-$blue: #9AC6DD;
+
 $black: #333;
 $white: #fff;
 
 /*--------------------------------
-下層ページ 共通TOP
+下層ページ共通 
 ---------------------------------*/
 .rp-under-top {
-    position: relative;
-    z-index: 1;
-    width: 100%;
-    height: 300px;
-    background: url(../../dist/images/top_pc02.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    text-align: center;
+    margin-top: 90px;
+    padding-top: 160px;
 
-    @media screen and (max-width: 850px) {
-        height: 200px;
-    }
-
-    @media screen and (max-width: 550px) {
-        height: 160px;
-    }
-
-    &::after {
-        content: "";
-        position: absolute;
-        z-index: 2;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: $white;
-        opacity: 0.8;
-    }
-}
-
-.under-top {
-    &__title {
-        width: 100%;
-        position: absolute;
-        top: 70%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        font-size: 46px;
-        font-weight: bold;
-        color: $deep_brown;
-        line-height: 2.8rem;
-        z-index: 3;
-
-        @media screen and (max-width: 850px) {
-            top: 60%;
-        }
-
-        @media screen and (max-width: 550px) {
-            line-height: 2.2rem;
-        }
-
-
-        &--sub {
-            font-size: 12px;
-            font-weight: normal;
-        }
+    @media screen and (max-width: 768px) {
+        margin-top: 80px;
+        padding-top: 80px;
     }
 }
 
 /*--------------------------------
 デイリーページ 
 ---------------------------------*/
+
+
 .rp-daily {
     &-section {
-        margin: 160px 0;
+        background: url('../../dist/images/yellow_bk_pc.jpg');
+        background-size: cover;
+        background-repeat: repeat;
+        margin-top: 120px;
+        padding-bottom: 180px;
 
-        @media screen and (max-width: 550px) {
-            margin: 120px 0;
+        @media screen and (max-width: 768px) {
+            background: url('../../dist/images/yellow_bk_sp.jpg');
+            background-size: contain;
+            background-repeat: repeat;
+            margin-top: 60px;
+            padding-bottom: 90px;
         }
     }
 
@@ -93,66 +46,82 @@ $white: #fff;
         justify-content: space-between;
         align-items: flex-start;
         flex-wrap: wrap;
-        margin: 160px 0;
+        padding: 120px 0;
 
-        @media screen and (max-width: 550px) {
-            margin: 120px 0;
+        @media screen and (max-width: 768px) {
+            padding: 60px 0;
         }
     }
 
     &-left {
-        width: 46%;
+        width: 52%;
 
-        @media screen and (max-width: 767px) {
+        @media screen and (max-width: 768px) {
             width: 100%;
         }
     }
 
     &-right {
-        width: 50%;
+        width: 45%;
         margin-left: 20px;
 
-        @media screen and (max-width: 767px) {
+        @media screen and (max-width: 768px) {
             width: 100%;
             margin-left: 0;
         }
     }
 
     &-time {
-        color: $white;
+        position: relative;
         font-family: "Itim", cursive;
-        font-size: 38px;
-        letter-spacing: 0.6rem;
+        font-size: 32px;
+        letter-spacing: 0.4rem;
+        color: $title_brown;
 
-        @media screen and (max-width: 767px) {
-            font-size: 24px;
-            margin: 44px 0 32px 0;
+        &::before {
+            content: '♦︎';
+            position: absolute;
+            font-size: 28px;
+            top: 5px;
+            color: $title_brown;
+        }
+
+        & span{
+            margin-left: 36px;
+        }
+
+        @media screen and (max-width: 768px) {
+            margin: 24px 0 28px;
         }
     }
 
     &-title {
-        margin: 32px 0;
+        margin: 24px 0;
         font-size: 38px;
-        letter-spacing: 0.7rem;
+        font-weight: 500;
+        letter-spacing: 0.4rem;
+        line-height: 5rem;
+        color: $title_brown;
 
-        @media screen and (max-width: 767px) {
-            margin: 24px 0;
+        @media screen and (max-width: 768px) {
             font-size: 28px;
+            line-height: 3rem;
         }
     }
 
     &-text {
-        line-height: 2.8rem;
+        line-height: 2.2rem;
         margin-bottom: 32px;
     }
 
     &-recommen {
         padding: 8px 16px;
+        border: 1px solid $title_brown;
 
         &__title {
             text-decoration: underline;
-            font-size: 22px;
-            color: $green;
+            font-size: 20px;
+            color: $title_brown;
         }
 
         &__list {
@@ -174,124 +143,27 @@ $white: #fff;
     }
 }
 
-// 色の設定
-._green {
-
-    &-time {
-        padding: 4px 6px 4px 12px;
-        background: $light_green;
-
-        @media screen and (max-width: 767px) {
-            padding: 6px 8px 6px 12px;
-        }
-    }
-
-    &-title {
-        color: $light_green;
-        font-weight: 500;
-
-        &__recommen {
-            color: $light_green;
-            font-weight: 500;
-            letter-spacing: 0.2rem;
-        }
-    }
-
-    &-frame {
-        border: 2px solid $light_green;
-    }
-
-}
-
-._orange {
-
-    &-time {
-        padding: 4px 44px 4px 12px;
-        background: $orange;
-
-        @media screen and (max-width: 767px) {
-            padding: 6px 32px 6px 12px;
-        }
-    }
-
-    &-title {
-        color: $orange;
-        font-weight: 500;
-
-        &__recommen {
-            color: $orange;
-            font-weight: 500;
-            letter-spacing: 0.2rem;
-        }
-    }
-
-    &-frame {
-        border: 2px solid $orange;
-    }
-
-}
-
-._pink {
-
-    &-time {
-        padding: 4px 44px 4px 12px;
-        background: $pink;
-
-        @media screen and (max-width: 767px) {
-            padding: 6px 32px 6px 12px;
-        }
-    }
-
-    &-title {
-        color: $pink;
-        font-weight: 500;
-
-        &__recommen {
-            color: $pink;
-            font-weight: 500;
-            letter-spacing: 0.2rem;
-        }
-    }
-
-    &-frame {
-        border: 2px solid $pink;
-    }
-
-}
-
-._blue {
-
-    &-time {
-        padding: 4px 44px 4px 12px;
-        background: $blue;
-
-        @media screen and (max-width: 767px) {
-            padding: 6px 32px 6px 12px;
-        }
-    }
-
-    &-title {
-        color: $blue;
-        font-weight: 500;
-
-        &__recommen {
-            color: $blue;
-            font-weight: 500;
-            letter-spacing: 0.2rem;
-        }
-    }
-
-    &-frame {
-        border: 2px solid $blue;
-    }
-
-}
-
 
 // スライダー部分
 .swiper {
     min-height: unset;
     padding: 0;
+}
+
+.slider .swiper-wrapper img{
+    border-radius: 0 80px 0 0;
+}
+
+.slider02 .swiper-wrapper img{
+    border-radius: 0 80px 0 0;
+}
+
+.slider03 .swiper-wrapper img{
+    border-radius: 0 80px 0 0;
+}
+
+.slider04 .swiper-wrapper img{
+    border-radius: 0 80px 0 0;
 }
 
 .slider-thumbnail {
@@ -355,26 +227,22 @@ $white: #fff;
 ---------------------------------*/
 .rp-news {
     &-section {
-        margin: 160px 0;
+        padding: 120px 0;
 
-        @media screen and (max-width: 550px) {
-            margin: 120px 0;
+        @media screen and (max-width: 768px) {
+            padding: 60px 0;
         }
     }
 
     &-item {
         padding: 24px 12px;
-        border-bottom: 1px dotted #77787B;
+        border-bottom: 1px dotted $btn_brown;
 
         @media screen and (max-width: 768px) {
             padding: 16px 12px;
         }
 
-        &:first-child {
-            border-top: 1px dotted #77787B;
-        }
-
-        & a:hover{
+        & a:hover {
             opacity: 0.6;
         }
 
@@ -382,7 +250,7 @@ $white: #fff;
             margin-right: 44px;
             opacity: 0.8;
 
-            @media screen and (max-width: 550px) {
+            @media screen and (max-width: 768px) {
                 margin-right: 24px;
             }
         }

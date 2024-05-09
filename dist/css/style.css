@@ -4,7 +4,7 @@
 ---------------------------------*/
 /* フォント */
 @import url("https://fonts.googleapis.com/css2?family=Courgette&family=Itim&family=Zen+Kaku+Gothic+New:wght@300&family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap");
-.zen-maru gothic-regular {
+.zen-maru gothirp-regular {
   font-style: normal;
   font-weight: 700;
   font-family: "Zen Maru Gothic", serif;
@@ -223,58 +223,234 @@ li {
   text-align: center;
 }
 
+._title-small {
+  font-size: 48px;
+}
+@media screen and (max-width: 768px) {
+  ._title-small {
+    font-size: 36px;
+  }
+}
+
+/*--------------------------------
+
+パンくずナビ
+
+---------------------------------*/
+.rp-breadcrumb {
+  width: 100%;
+}
+.rp-breadcrumb-inner {
+  width: 100%;
+  padding: 0 25px;
+  text-align: right;
+}
+@media screen and (max-width: 768px) {
+  .rp-breadcrumb-inner {
+    padding: 0;
+    text-align: left;
+  }
+}
+.rp-breadcrumb-inner > span {
+  display: inline-block;
+  color: #707070;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+/*--------------------------------
+
+ページ間ナビゲーション
+
+---------------------------------*/
+.rp-pagenavi {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 120px;
+}
+.rp-pagenavi a:hover {
+  color: #765D11;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+}
+@media screen and (max-width: 768px) {
+  .rp-pagenavi {
+    margin-top: 60px;
+  }
+}
+.rp-pagenavi__text {
+  display: block;
+  color: #765D11;
+  font-weight: bold;
+  text-align: center;
+}
+
+.rp-btn-next {
+  display: flex;
+  z-index: 10;
+  position: relative;
+  align-items: center;
+  width: 120px;
+  color: #765D11;
+  font-weight: bold;
+}
+@media screen and (max-width: 768px) {
+  .rp-btn-next {
+    width: 100px;
+  }
+}
+.rp-btn-next:hover .rp-btn-next__arrow--line01 {
+  width: 54px;
+}
+@media screen and (max-width: 768px) {
+  .rp-btn-next:hover .rp-btn-next__arrow--line01 {
+    width: 44px;
+  }
+}
+.rp-btn-next:hover .rp-btn-next__arrow--line02 {
+  right: -70px;
+}
+@media screen and (max-width: 768px) {
+  .rp-btn-next:hover .rp-btn-next__arrow--line02 {
+    right: -60px;
+  }
+}
+.rp-btn-next__arrow {
+  position: relative;
+  margin-left: 10px;
+}
+.rp-btn-next__arrow--line01 {
+  position: absolute;
+  left: 18px;
+  width: 44px;
+  height: 2px;
+  background: #765D11;
+  transition: 0.4s;
+}
+@media screen and (max-width: 768px) {
+  .rp-btn-next__arrow--line01 {
+    width: 34px;
+  }
+}
+.rp-btn-next__arrow--line02 {
+  position: absolute;
+  top: 0;
+  right: -60px;
+  width: 12px;
+  height: 2px;
+  transform: rotate(30deg);
+  transform-origin: right bottom;
+  background: #765D11;
+  transition: 0.4s;
+}
+@media screen and (max-width: 768px) {
+  .rp-btn-next__arrow--line02 {
+    right: -50px;
+  }
+}
+
+.rp-btn-prev {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  width: 120px;
+  color: #765D11;
+  font-weight: bold;
+}
+@media screen and (max-width: 768px) {
+  .rp-btn-prev {
+    width: 100px;
+  }
+}
+.rp-btn-prev:hover .rp-btn-prev__arrow--line01 {
+  width: 54px;
+}
+@media screen and (max-width: 768px) {
+  .rp-btn-prev:hover .rp-btn-prev__arrow--line01 {
+    width: 44px;
+  }
+}
+.rp-btn-prev:hover .rp-btn-prev__arrow--line02 {
+  left: -70px;
+}
+@media screen and (max-width: 768px) {
+  .rp-btn-prev:hover .rp-btn-prev__arrow--line02 {
+    left: -60px;
+  }
+}
+.rp-btn-prev__arrow {
+  position: relative;
+  margin-right: 10px;
+}
+.rp-btn-prev__arrow--line01 {
+  position: absolute;
+  right: 18px;
+  width: 44px;
+  height: 2px;
+  background: #765D11;
+  transition: 0.4s;
+}
+@media screen and (max-width: 768px) {
+  .rp-btn-prev__arrow--line01 {
+    width: 34px;
+  }
+}
+.rp-btn-prev__arrow--line02 {
+  position: absolute;
+  top: 0;
+  left: -60px;
+  width: 12px;
+  height: 2px;
+  transform: rotate(-30deg);
+  transform-origin: left bottom;
+  background: #765D11;
+  transition: 0.4s;
+}
+@media screen and (max-width: 768px) {
+  .rp-btn-prev__arrow--line02 {
+    left: -50px;
+  }
+}
+
 /*--------------------------------
 アニメーション
 ---------------------------------*/
-.up-first {
-  visibility: hidden;
-  transform: translateY(40px);
-  opacity: 0;
-  transition: 2s;
+._fade-up {
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-name: fadeUp;
 }
 
-.up-second {
-  visibility: hidden;
-  transform: translateY(40px);
-  opacity: 0;
-  transition: 4s;
+._slide-in {
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.25, 1, 0.5, 1);
+  animation-fill-mode: forwards;
+  animation-name: slideIn;
 }
 
-.up-third {
-  visibility: hidden;
-  transform: translateY(40px);
-  opacity: 0;
-  transition: 6S;
+@keyframes fadeUp {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
-
-.up-fourth {
-  visibility: hidden;
-  transform: translateY(40px);
-  opacity: 0;
-  transition: 8S;
+@keyframes slideIn {
+  0% {
+    transform: translateX(180px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+  }
+  40%, 100% {
+    opacity: 1;
+  }
 }
-
-.right {
-  visibility: hidden;
-  transform: translateX(40px);
-  opacity: 0;
-  transition: 3s;
-}
-
-.left {
-  visibility: hidden;
-  transform: translateX(-40px);
-  opacity: 0;
-  transition: 3s;
-}
-
-.active {
-  visibility: visible;
-  transform: translateY(0);
-  transform: translateX(0);
-  opacity: 1;
-}
-
 /*--------------------------------
 ヘッダー・グローバルナビ
 ---------------------------------*/
@@ -339,7 +515,7 @@ li {
   letter-spacing: 0.2em;
   transition: 0.3s;
 }
-.gnav-item a :hover, .gnav-item__tell a :hover {
+.gnav-item a:hover, .gnav-item__tell a:hover {
   opacity: 0.6;
 }
 .gnav-item__tell {

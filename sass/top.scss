@@ -7,7 +7,9 @@ $black: #333;
 $white: #fff;
 
 /*--------------------------------
+
 スタート
+
 ---------------------------------*/
 .top-start {
     background: $white;
@@ -29,7 +31,9 @@ $white: #fff;
 }
 
 /*--------------------------------
+
 TOP
+
 ---------------------------------*/
 .rp-top-kv {
     margin-top: 60px;
@@ -164,7 +168,9 @@ About
 }
 
 /*--------------------------------
+
 Concept
+
 ---------------------------------*/
 .rp-top-concept {
     position: relative;
@@ -342,7 +348,9 @@ Concept
 }
 
 /*--------------------------------
+
 Daily
+
 ---------------------------------*/
 .rp-top-daily {
     background: url('../../dist/images/yellow_bk_pc.jpg');
@@ -367,6 +375,10 @@ Daily
 
     &-img {
         border-radius: 20px 20px 20px 135px;
+
+        @media screen and (max-width: 768px) {
+            border-radius: 20px 20px 20px 100px;
+        }
     }
 
     &-write {
@@ -429,7 +441,9 @@ Daily
 }
 
 /*--------------------------------
+
 スライダー
+
 ---------------------------------*/
 .swiper {
     width: min(100%, 900px);

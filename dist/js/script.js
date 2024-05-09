@@ -1,15 +1,5 @@
 
 $(function () {
-    //ページ内スクロール
-    var navHeight = $(".gnav__list").outerHeight();
-
-    $('a[href^="#"]').on("click", function () {
-        var href = $(this).attr("href");
-        var target = $(href == "#" || href == "" ? "html" : href);
-        var position = target.offset().top - navHeight;
-        $("html, body").animate({ scrollTop: position, }, 600, "swing");
-        return false;
-    });
 
     // ページ内スクロール
     var headerHeight = $('header').outerHeight(); 
@@ -31,19 +21,6 @@ $(function () {
         return false; // #付与なし、付与したい場合は、true
     });
 
-
-    //アニメーションをつけるときはclassにfadeと動きを指示するクラスを付与する
-    $(window).on('load scroll', function () {
-        $('.fade').each(function () {
-            var target = $(this).offset().top;
-            var scroll = $(window).scrollTop();
-            var height = $(window).height();
-            if (scroll > target - height) {
-                $(this).addClass('active');
-            }
-        });
-    });
-
     // アコーディオン
     $(".js-accordion_title").on("click", function () {
         // クリックした次の要素を開閉
@@ -62,20 +39,3 @@ $(function () {
 
 });
 
-/* ハンバーガーメニュー */
-const hamBtn = document.getElementById("hamBtn");
-const hamburgerGnav = document.getElementById("hamburgerGnav")
-
-//クリックすると、ハンバーガーメニューが表示
-hamBtn.addEventListener('click', () => {
-    document.querySelector('html').classList.toggle('open');
-});
-
-//アンカーメニュークリック後、ハンバーガメニュー非表示
-$('#js_hamburger a[href]').on('click', function (event) {
-    $('#hamBtn').trigger('click');
-});
-
-$('.gnav-logo a[href]').on('click', function (event) {
-    document.querySelector('html').classList.remove('open');
-});

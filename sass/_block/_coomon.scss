@@ -13,7 +13,7 @@ $white: #fff;
 /* フォント */
 @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Itim&family=Zen+Kaku+Gothic+New:wght@300&family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap');
 
-.zen-maru gothic-regular {
+.zen-maru gothirp-regular {
     font-family: "Zen Maru Gothic", serif;
     font-weight: 700;
     font-style: normal;
@@ -239,67 +239,253 @@ li {
     margin-bottom: 0 !important;
 }
 
-._mt-10{
+._mt-10 {
     margin-top: 10px !important;
 }
 
-._text-center{
+._text-center {
     text-align: center;
 }
 
+._title-small {
+    font-size: 48px;
 
+    @media screen and (max-width: 768px) {
+        font-size: 36px;
+    }
+}
+
+/*--------------------------------
+
+パンくずナビ
+
+---------------------------------*/
+
+.rp-breadcrumb {
+    width: 100%;
+
+    &-inner {
+        text-align: right;
+        padding: 0 25px;
+        width: 100%;
+
+        @media screen and (max-width: 768px) {
+            text-align: left;
+            padding: 0;
+        }
+
+        >span {
+            display: inline-block;
+            font-weight: 500;
+            line-height: 1.5;
+            color: #707070;
+
+        }
+    }
+}
+
+
+/*--------------------------------
+
+ページ間ナビゲーション
+
+---------------------------------*/
+.rp-pagenavi {
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    a:hover {
+        color: $btn_brown;
+        text-decoration: underline;
+        text-decoration-thickness: 1px;
+    }
+
+    @media screen and (max-width: 768px) {
+        margin-top: 60px;
+    }
+
+    &__text {
+        display: block;
+        text-align: center;
+        font-weight: bold;
+        color: $btn_brown;
+    }
+}
+
+// 次へ
+.rp-btn-next {
+    width: 120px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: $btn_brown;
+    position: relative;
+    z-index: 10;
+
+    @media screen and (max-width: 768px) {
+        width: 100px;
+    }
+
+    &:hover .rp-btn-next__arrow--line01 {
+        width: 54px;
+
+        @media screen and (max-width: 768px) {
+            width: 44px;
+        }
+    }
+
+    &:hover .rp-btn-next__arrow--line02 {
+        right: -70px;
+
+        @media screen and (max-width: 768px) {
+            right: -60px;
+        }
+    }
+
+    &__arrow {
+        position: relative;
+        margin-left: 10px;
+
+
+        &--line01 {
+            position: absolute;
+            left: 18px;
+            width: 44px;
+            height: 2px;
+            background: $btn_brown;
+            transition: .4s;
+
+            @media screen and (max-width: 768px) {
+                width: 34px;
+            }
+        }
+
+        &--line02 {
+            position: absolute;
+            top: 0;
+            right: -60px;
+            transform-origin: right bottom;
+            width: 12px;
+            height: 2px;
+            background: $btn_brown;
+            transform: rotate(30deg);
+            transition: .4s;
+
+            @media screen and (max-width: 768px) {
+                right: -50px;
+            }
+        }
+    }
+}
+
+// 前へ
+.rp-btn-prev {
+    width: 120px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    font-weight: bold;
+    color: $btn_brown;
+
+    @media screen and (max-width: 768px) {
+        width: 100px;
+    }
+
+    &:hover .rp-btn-prev__arrow--line01 {
+        width: 54px;
+
+        @media screen and (max-width: 768px) {
+            width: 44px;
+        }
+    }
+
+    &:hover .rp-btn-prev__arrow--line02 {
+        left: -70px;
+
+        @media screen and (max-width: 768px) {
+            left: -60px;
+        }
+    }
+
+    &__arrow {
+        position: relative;
+        margin-right: 10px;
+
+        &--line01 {
+            position: absolute;
+            right: 18px;
+            width: 44px;
+            height: 2px;
+            background: $btn_brown;
+            transition: .4s;
+
+            @media screen and (max-width: 768px) {
+                width: 34px;
+            }
+        }
+
+        &--line02 {
+            position: absolute;
+            top: 0;
+            left: -60px;
+            transform-origin: left bottom;
+            width: 12px;
+            height: 2px;
+            background: $btn_brown;
+            transform: rotate(-30deg);
+            transition: .4s;
+
+            @media screen and (max-width: 768px) {
+                left: -50px;
+            }
+        }
+    }
+}
 
 
 /*--------------------------------
 アニメーション
 ---------------------------------*/
-.up-first {
-    opacity: 0;
-    visibility: hidden;
-    transition: 2s;
-    transform: translateY(40px);
 
+._fade-up {
+    animation-name: fadeUp;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
 }
 
-.up-second {
-    opacity: 0;
-    visibility: hidden;
-    transition: 4s;
-    transform: translateY(40px);
+._slide-in {
+    animation-name: slideIn;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.25, 1, 0.5, 1);
+    animation-fill-mode: forwards;
 }
 
-.up-third {
-    opacity: 0;
-    visibility: hidden;
-    transition: 6S;
-    transform: translateY(40px);
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-.up-fourth {
-    opacity: 0;
-    visibility: hidden;
-    transition: 8S;
-    transform: translateY(40px);
-}
+@keyframes slideIn {
+    0% {
+        transform: translateX(180px);
+        opacity: 0;
+    }
 
+    100% {
+        transform: translateX(0);
+    }
 
-.right {
-    opacity: 0;
-    visibility: hidden;
-    transition: 3s;
-    transform: translateX(40px);
-}
-
-.left {
-    opacity: 0;
-    visibility: hidden;
-    transition: 3s;
-    transform: translateX(-40px);
-}
-
-.active {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-    transform: translateX(0);
+    40%,
+    100% {
+        opacity: 1;
+    }
 }

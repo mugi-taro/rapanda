@@ -2,12 +2,12 @@
 /*--------------------------------
 下層ページ共通 
 ---------------------------------*/
-.rp-under-top {
+.rp-lower-top {
   margin-top: 90px;
   padding-top: 160px;
 }
 @media screen and (max-width: 768px) {
-  .rp-under-top {
+  .rp-lower-top {
     margin-top: 80px;
     padding-top: 80px;
   }
@@ -258,7 +258,9 @@
 }
 
 /*--------------------------------
+
 お知らせ一覧ページ
+
 ---------------------------------*/
 .rp-news-section {
   padding: 120px 0;
@@ -288,4 +290,36 @@
   .rp-news-item__date {
     margin-right: 24px;
   }
+}
+
+/*--------------------------------
+
+お知らせページ
+
+---------------------------------*/
+.rp-page-section {
+  margin-top: 60px;
+}
+@media screen and (max-width: 768px) {
+  .rp-page-section {
+    margin-top: 30px;
+  }
+}
+.rp-page-item {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .rp-page-item {
+    width: 100%;
+  }
+}
+.rp-page-item__img img {
+  width: 100%;
+}
+.rp-page-item__text {
+  margin: 24px 0;
+  line-height: 2.2rem;
+  text-align: left;
 }

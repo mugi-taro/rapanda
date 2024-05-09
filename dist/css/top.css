@@ -1,6 +1,8 @@
 @charset "UTF-8";
 /*--------------------------------
+
 スタート
+
 ---------------------------------*/
 .top-start {
   z-index: 100;
@@ -21,7 +23,9 @@
 }
 
 /*--------------------------------
+
 TOP
+
 ---------------------------------*/
 .rp-top-kv {
   margin-top: 60px;
@@ -150,7 +154,9 @@ About
 }
 
 /*--------------------------------
+
 Concept
+
 ---------------------------------*/
 .rp-top-concept {
   position: relative;
@@ -313,7 +319,9 @@ Concept
 }
 
 /*--------------------------------
+
 Daily
+
 ---------------------------------*/
 .rp-top-daily {
   margin-top: 240px;
@@ -340,6 +348,11 @@ Daily
 }
 .top-daily-img {
   border-radius: 20px 20px 20px 135px;
+}
+@media screen and (max-width: 768px) {
+  .top-daily-img {
+    border-radius: 20px 20px 20px 100px;
+  }
 }
 .top-daily-write {
   display: none;
@@ -399,7 +412,9 @@ Daily
 }
 
 /*--------------------------------
+
 スライダー
+
 ---------------------------------*/
 .swiper {
   width: min(100%, 900px);

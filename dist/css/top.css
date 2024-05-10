@@ -32,6 +32,9 @@
   opacity: 0;
   transition: 1s ease-out;
 }
+.top-start-animation img {
+  width: 50%;
+}
 .top-start-animation.is-active {
   visibility: visible;
   opacity: 1;
@@ -172,7 +175,7 @@ About
 }
 @media screen and (max-width: 768px) {
   .top-about-img {
-    top: 40px;
+    top: 60px;
     right: 0;
     left: unset;
     width: 40%;
@@ -197,7 +200,7 @@ Concept
 }
 @media screen and (max-width: 500px) {
   .rp-top-concept {
-    height: 2400px;
+    height: 2300px;
   }
 }
 .rp-top-concept::before {

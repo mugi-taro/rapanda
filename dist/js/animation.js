@@ -6,8 +6,6 @@ function fadeAnime() {
         var windowHeight = $(window).height();
         if (scroll >= elemPos - windowHeight) {
             $(this).addClass('_fade-up');
-        } else {
-            $(this).removeClass('_fade-up');
         }
     });
 
@@ -17,8 +15,6 @@ function fadeAnime() {
         var windowHeight = $(window).height();
         if (scroll >= elemPos - windowHeight) {
             $(this).addClass('_zoom-in');
-        } else {
-            $(this).removeClass('_zoom-in');
         }
     });
 
@@ -28,8 +24,6 @@ function fadeAnime() {
         var windowHeight = $(window).height();
         if (scroll >= elemPos - windowHeight) {
             $(this).addClass('_flip-left');
-        } else {
-            $(this).removeClass('_flip-left');
         }
     });
 

@@ -40,6 +40,10 @@ $white: #fff;
         opacity: 0;
         visibility: hidden;
 
+        & img{
+            width: 50%;
+        }
+
         &.is-active {
             opacity: 1;
             visibility: visible;
@@ -188,7 +192,7 @@ About
 
         @media screen and (max-width: 768px) {
             width: 40%;
-            top: 40px;
+            top: 60px;
             left: unset;
             right: 0;
         }
@@ -212,7 +216,7 @@ Concept
     }
 
     @media screen and (max-width: 500px) {
-        height: 2400px;
+        height: 2300px;
     }
 
     &::before {

@@ -19,14 +19,31 @@ $white: #fff;
     height: 100%;
     width: 100%;
     z-index: 100;
+    opacity: 1;
+    visibility: visible;
+    transition:2s ease-out;
 
-    & p {
-        position: fixed;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        display: none;
+    &.no-active {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    &-animation {
+        width: 100vw;
+        height: 100vh;
+        transition:1s ease-out;
+        background-color: #fff;
         z-index: 101;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        visibility: hidden;
+
+        &.is-active {
+            opacity: 1;
+            visibility: visible;
+        }
     }
 }
 
@@ -93,6 +110,25 @@ TOP
     }
 }
 
+.slider-kv {
+    &_pc {
+        display: block;
+
+        @media screen and (max-width: 600px) {
+            display: none;
+        }
+    }
+
+    &_sp {
+        display: none;
+
+        @media screen and (max-width: 600px) {
+            display: block;
+        }
+    }
+}
+
+
 /*--------------------------------
 
 About
@@ -136,13 +172,6 @@ About
     &-sns {
         margin: 32px 0;
 
-        img {
-            margin-right: 12px;
-
-            &:last-child {
-                margin-right: 0;
-            }
-        }
     }
 
     &-text {
@@ -159,7 +188,7 @@ About
 
         @media screen and (max-width: 768px) {
             width: 40%;
-            top: 80px;
+            top: 40px;
             left: unset;
             right: 0;
         }
@@ -374,17 +403,14 @@ Daily
     }
 
     &-img {
-        border-radius: 20px 20px 20px 135px;
+        border-radius: 20px;
 
-        @media screen and (max-width: 768px) {
-            border-radius: 20px 20px 20px 100px;
-        }
     }
 
     &-write {
         display: none;
         margin: 0 auto;
-        margin-top: -20px;
+        margin-top: 20px;
 
         @media screen and (max-width: 768px) {
             width: 100%;
@@ -403,36 +429,41 @@ Daily
         }
 
         &__title {
-            margin: 24px 0 24px 32px;
             color: $title_brown;
             font-size: 28px;
             font-weight: 500;
             letter-spacing: 0.2rem;
+            line-height: 4rem;
 
             @media screen and (max-width: 768px) {
-                margin: 12px 0;
                 font-size: 26px;
+                line-height: 3rem;
             }
 
             &--time {
-                float: right;
-                font-size: 26px;
+                position: relative;
+                font-size: 34px;
+                font-family: "Itim", cursive;
 
-                @media screen and (max-width: 768px) {
-                    line-height: 4rem;
-                    float: unset;
-                    font-size: 24px;
+                &::before {
+                    position: absolute;
+                    content: '';
+                    width: 130px;
+                    height: 10px;
+                    bottom: 4px;
+                    background: #77787B;
+                    opacity: 0.6;
+                    z-index: -2;
                 }
             }
 
         }
 
         &__text {
-            margin-left: 32px;
+            margin-top: 12px;
             line-height: 1.8rem;
 
             @media screen and (max-width: 768px) {
-                margin-left: 0;
                 line-height: 2rem;
             }
         }
@@ -537,7 +568,7 @@ News
     background: $white;
 
     @media screen and (max-width: 768px) {
-        padding: 60px 0 100px 0;
+        padding: 120px 0 140px 0;
     }
 }
 
@@ -585,7 +616,11 @@ News
         letter-spacing: 0.2rem;
 
         &:hover {
-            opacity: 0.8;
+            opacity: 0.6;
+        }
+
+        @media screen and (max-width: 768px) {
+            position: relative;
         }
 
     }
@@ -603,7 +638,7 @@ News
 
         @media screen and (max-width: 768px) {
             top: 0;
-            right: 8%;
+            right: 0;
             left: unset;
             width: 38%;
         }
@@ -644,6 +679,10 @@ Info
     height: 1800px;
 
     @media screen and (max-width: 768px) {
+        height: 1700px;
+    }
+
+    @media screen and (max-width: 550px) {
         height: 2000px;
     }
 
@@ -721,7 +760,7 @@ Info
     }
 
     &-item {
-        margin: 88px 0;
+        margin: 72px 0;
 
         &:last-child {
             margin: 44px 0 0;
@@ -848,10 +887,10 @@ Info
                 background: url('../../dist/images/tell_icon.png');
                 background-repeat: no-repeat;
                 background-size: contain;
-    
+
             }
 
-            &:after{
+            &:after {
                 display: none;
             }
 

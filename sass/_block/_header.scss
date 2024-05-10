@@ -82,7 +82,7 @@ $white: #fff;
             font-size: 13px;
 
             &:hover {
-                opacity: 0.6;
+                opacity: 0.8;
             }
 
         }
@@ -90,7 +90,6 @@ $white: #fff;
         &__tell {
             @extend .gnav-item;
             position: relative;
-            border-radius: 0 0 0 20px;
             width: 140px;
             height: 80px;
             background: $btn_brown;
@@ -130,7 +129,7 @@ $white: #fff;
                 color: $btn_brown;
                 border: 1px solid $btn_brown;
                 background: $white;
-                border-radius: 0 0 0 20px;
+                opacity: 1;
 
                 & a::before {
                     background: url('../../dist/images/tell_icon_brown.png');
@@ -214,6 +213,7 @@ $white: #fff;
     height: 68px;
     cursor: pointer;
     transition: 0.8s all;
+    border-radius: 50px;
 
     &::before {
         content: '';

@@ -22,25 +22,11 @@ Footer
 }
 
 .footer {
-    &-sns {
+    &-color {
         position: relative;
         z-index: 3;
-        text-align: center;
-        padding: 24px 0;
+        height: 60px;
         background: $light_brown;
-
-        @media screen and (max-width: 768px) {
-            padding: 12px 0;
-        }
-
-        & img {
-            margin-right: 12px;
-
-            &:last-child {
-                margin-right: 0;
-                margin-left: 12px;
-            }
-        }
     }
 
     &-list {
@@ -52,8 +38,14 @@ Footer
         }
     }
 
+    &-sns {
+        display: block;
+        margin: 8px 0 12px;
+        width: 35px;
+        opacity: 0.9;
+    }
+
     &-text {
-        padding-top: 24px;
         color: $white;
         font-size: 12px;
         font-weight: 500;

@@ -107,10 +107,10 @@ li {
     letter-spacing: 0.2rem;
     color: $title_brown;
     font-weight: normal;
-    font-family: "Itim", cursive;
 
     &__main {
         font-size: 72px;
+        font-family: "Itim", cursive;
 
         @media screen and (max-width: 768px) {
             font-size: 46px;
@@ -120,7 +120,7 @@ li {
 
     &__text {
         font-size: 14px;
-        margin-top: 32px;
+        margin-top: 8px;
         margin-left: 2px;
     }
 
@@ -455,12 +455,32 @@ li {
     animation-fill-mode: forwards;
 }
 
+.top-concept-item__title._fade-up {
+    animation-delay: .2s;
+}
+
+._zoom-in {
+    animation-name: zoomIn;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+
 ._slide-in {
     animation-name: slideIn;
     animation-duration: 2s;
     animation-timing-function: cubic-bezier(0.25, 1, 0.5, 1);
     animation-fill-mode: forwards;
 }
+
+._flip-left {
+    animation-name: flipLeft;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    perspective-origin: left center;
+    opacity: 0;
+}
+
 
 @keyframes fadeUp {
     from {
@@ -471,6 +491,30 @@ li {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.6);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes flipLeft {
+    from {
+        transform: perspective(600px) translate3d(0, 0, 0) rotateY(30deg);
+        opacity: 0;
+    }
+
+    to {
+        transform: perspective(600px) translate3d(0, 0, 0) rotateY(0deg);
+        opacity: 1;
     }
 }
 

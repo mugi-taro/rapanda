@@ -2,7 +2,7 @@
 $(function () {
 
     // ページ内スクロール
-    var headerHeight = $('header').outerHeight(); 
+    var headerHeight = $('header').outerHeight();
     var urlHash = location.hash; // ハッシュ値があればページ内スクロール
     if (urlHash) { // 外部リンクからのクリック時
         $('body,html').stop().scrollTop(0); // スクロールを0に戻す
@@ -29,13 +29,50 @@ $(function () {
         $(this).toggleClass("open", 450);
     });
 
-    //スタートアニメーション
-    setTimeout(function () {
-        $('.top-start p').fadeIn(1200);
-    }, 500); //0.5秒後にロゴ表示
-    setTimeout(function () {
-        $('.top-start').fadeOut(600);
-    }, 5500); //5秒後に非表示
+    // スタート画面 2回目以降のアクセスは表示しない
+    var webStorage = function () {
+        if (sessionStorage.getItem('access')) {
+            /* 2回目以降アクセス時の処理 */
+            $(".top-start").addClass('no-active');
+        } else {
+            /* 初回アクセス時の処理 */
+            sessionStorage.setItem('access', 'true'); // sessionStorageにデータを保存
+            $(".top-start-animation").addClass('is-active'); // loadingアニメーションを表示
+            setTimeout(function () {
+                $(".top-start").addClass('no-active');
+                $(".top-start-animation").removeClass('is-active');
+            }, 5000); // ローディングを表示する時間
+        }
+    }
+    webStorage();
 
 });
+
+
+
+// スクロール固定用
+let scrollPositionFixed;
+const ua = window.navigator.userAgent.toLowerCase();
+const isiOS = ua.indexOf("iphone") > -1 || ua.indexOf("ipad") > -1 || (ua.indexOf("macintosh") > -1 && "ontouchend" in document);
+const body = document.querySelector("body");
+
+function bodyFixedOn() {
+    if (isiOS) {
+        scrollPositionFixed = window.pageYOffset;
+        body.style.position = "fixed";
+        body.style.top = `-${scrollPositionFixed}px`;
+    } else {
+        body.style.overflow = "hidden";
+    }
+}
+
+function bodyFixedOff() {
+    if (isiOS) {
+        body.style.removeProperty("position");
+        body.style.removeProperty("top");
+        window.scroll(0, scrollPositionFixed);
+    } else {
+        body.style.removeProperty("overflow");
+    }
+}
 

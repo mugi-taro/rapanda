@@ -100,11 +100,11 @@ li {
   margin-bottom: 44px;
   color: #987406;
   font-weight: normal;
-  font-family: "Itim", cursive;
   letter-spacing: 0.2rem;
 }
 .rp-section-title__main {
   font-size: 72px;
+  font-family: "Itim", cursive;
 }
 @media screen and (max-width: 768px) {
   .rp-section-title__main {
@@ -112,7 +112,7 @@ li {
   }
 }
 .rp-section-title__text {
-  margin-top: 32px;
+  margin-top: 8px;
   margin-left: 2px;
   font-size: 14px;
 }
@@ -422,11 +422,29 @@ li {
   animation-name: fadeUp;
 }
 
+.top-concept-item__title._fade-up {
+  animation-delay: 0.2s;
+}
+
+._zoom-in {
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-name: zoomIn;
+}
+
 ._slide-in {
-  animation-duration: 1s;
+  animation-duration: 2s;
   animation-timing-function: cubic-bezier(0.25, 1, 0.5, 1);
   animation-fill-mode: forwards;
   animation-name: slideIn;
+}
+
+._flip-left {
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-name: flipLeft;
+  opacity: 0;
+  perspective-origin: left center;
 }
 
 @keyframes fadeUp {
@@ -436,6 +454,26 @@ li {
   }
   to {
     transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes zoomIn {
+  from {
+    transform: scale(0.6);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes flipLeft {
+  from {
+    transform: perspective(600px) translate3d(0, 0, 0) rotateY(30deg);
+    opacity: 0;
+  }
+  to {
+    transform: perspective(600px) translate3d(0, 0, 0) rotateY(0deg);
     opacity: 1;
   }
 }
@@ -516,14 +554,13 @@ li {
   transition: 0.3s;
 }
 .gnav-item a:hover, .gnav-item__tell a:hover {
-  opacity: 0.6;
+  opacity: 0.8;
 }
 .gnav-item__tell {
   position: relative;
   width: 140px;
   height: 80px;
   margin-top: -24px;
-  border-radius: 0 0 0 20px;
   background: #765D11;
   color: #fff;
   text-align: center;
@@ -555,9 +592,9 @@ li {
 }
 .gnav-item__tell:hover {
   border: 1px solid #765D11;
-  border-radius: 0 0 0 20px;
   background: #fff;
   color: #765D11;
+  opacity: 1;
 }
 .gnav-item__tell:hover a::before {
   background: url("../../dist/images/tell_icon_brown.png");
@@ -621,6 +658,7 @@ li {
   height: 68px;
   padding: 14px;
   border: none;
+  border-radius: 50px;
   outline: none;
   background: #765D11;
   cursor: pointer;
@@ -678,24 +716,11 @@ Footer
   }
 }
 
-.footer-sns {
+.footer-color {
   z-index: 3;
   position: relative;
-  padding: 24px 0;
+  height: 60px;
   background: #E8D6AB;
-  text-align: center;
-}
-@media screen and (max-width: 768px) {
-  .footer-sns {
-    padding: 12px 0;
-  }
-}
-.footer-sns img {
-  margin-right: 12px;
-}
-.footer-sns img:last-child {
-  margin-right: 0;
-  margin-left: 12px;
 }
 .footer-list {
   padding: 32px 0;
@@ -706,8 +731,13 @@ Footer
     padding: 24px 0 8px;
   }
 }
+.footer-sns {
+  display: block;
+  width: 35px;
+  margin: 8px 0 12px;
+  opacity: 0.9;
+}
 .footer-text {
-  padding-top: 24px;
   color: #fff;
   font-weight: 500;
   font-size: 12px;

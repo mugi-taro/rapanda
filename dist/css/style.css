@@ -489,6 +489,12 @@ li {
     opacity: 1;
   }
 }
+.fadeInTrigger,
+.zoomInTrigger,
+.zoomInTrigger {
+  opacity: 0;
+}
+
 /*--------------------------------
 ヘッダー・グローバルナビ
 ---------------------------------*/

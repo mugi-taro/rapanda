@@ -32,8 +32,10 @@
   opacity: 0;
   transition: 1s ease-out;
 }
-.top-start-animation img {
-  width: 50%;
+@media screen and (max-width: 768px) {
+  .top-start-animation img {
+    width: 50%;
+  }
 }
 .top-start-animation.is-active {
   visibility: visible;

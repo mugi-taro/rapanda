@@ -25,7 +25,7 @@ Footer
     &-color {
         position: relative;
         z-index: 3;
-        height: 60px;
+        height: 30px;
         background: $light_brown;
     }
 
@@ -40,8 +40,8 @@ Footer
 
     &-sns {
         display: block;
-        margin: 8px 0 12px;
-        width: 35px;
+        margin: 8px 0;
+        width: 24px;
         opacity: 0.9;
     }
 
@@ -51,8 +51,5 @@ Footer
         font-weight: 500;
         letter-spacing: 0.1rem;
 
-        @media screen and (max-width: 768px) {
-            padding: 16px 0;
-        }
     }
 }

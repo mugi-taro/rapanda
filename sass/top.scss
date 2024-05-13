@@ -21,7 +21,7 @@ $white: #fff;
     z-index: 100;
     opacity: 1;
     visibility: visible;
-    transition:2s ease-out;
+    transition: 2s ease-out;
 
     &.no-active {
         opacity: 0;
@@ -31,7 +31,7 @@ $white: #fff;
     &-animation {
         width: 100vw;
         height: 100vh;
-        transition:1s ease-out;
+        transition: 1s ease-out;
         background-color: #fff;
         z-index: 101;
         display: flex;
@@ -40,7 +40,7 @@ $white: #fff;
         opacity: 0;
         visibility: hidden;
 
-        & img{
+        & img {
 
             @media screen and (max-width: 768px) {
                 width: 50%;
@@ -74,11 +74,11 @@ TOP
 
     & img {
         float: right;
-        width: 90%;
+        width: 95%;
         height: 100%;
         right: 0;
 
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 550px) {
             width: 100%;
         }
     }
@@ -97,7 +97,7 @@ TOP
             position: absolute;
             left: 40px;
             padding: 0 4px;
-            bottom: 100px;
+            bottom: 95px;
             z-index: 3;
 
             @media screen and (max-width: 768px) {
@@ -107,7 +107,7 @@ TOP
 
         & span:nth-child(1) {
             left: 4px;
-            bottom: 170px;
+            bottom: 165px;
 
             @media screen and (max-width: 768px) {
                 left: 0;
@@ -212,6 +212,10 @@ Concept
     position: relative;
     height: 2000px;
     margin-top: 240px;
+
+    @media screen and (max-width: 900px) {
+        margin-top: 120px;
+    }
 
     @media screen and (max-width: 768px) {
         margin-top: 60px;
@@ -394,6 +398,10 @@ Daily
     background-repeat: repeat;
     margin-top: 240px;
 
+    @media screen and (max-width: 900px) {
+        margin-top: 120px;
+    }
+
     @media screen and (max-width: 768px) {
         background: url('../../dist/images/yellow_bk_sp.jpg');
         background-size: contain;
@@ -495,6 +503,17 @@ Daily
     }
 }
 
+.swiper-slide{
+    opacity: 0 !important;
+}
+
+.swiper-slide-active {
+    opacity: 1 !important;
+    & a:hover {
+        opacity: 0.7 !important;
+    }
+}
+
 .swiper-slide {
     width: 100%;
     height: 100%;
@@ -511,6 +530,10 @@ Daily
 
     @media screen and (max-width: 950px) {
         top: 27%;
+    }
+
+    @media screen and (max-width: 768px) {
+        top: 35%;
     }
 
     @media screen and (max-width: 550px) {

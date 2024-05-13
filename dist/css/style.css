@@ -725,7 +725,7 @@ Footer
 .footer-color {
   z-index: 3;
   position: relative;
-  height: 60px;
+  height: 30px;
   background: #E8D6AB;
 }
 .footer-list {
@@ -739,8 +739,8 @@ Footer
 }
 .footer-sns {
   display: block;
-  width: 35px;
-  margin: 8px 0 12px;
+  width: 24px;
+  margin: 8px 0;
   opacity: 0.9;
 }
 .footer-text {
@@ -748,9 +748,4 @@ Footer
   font-weight: 500;
   font-size: 12px;
   letter-spacing: 0.1rem;
-}
-@media screen and (max-width: 768px) {
-  .footer-text {
-    padding: 16px 0;
-  }
 }

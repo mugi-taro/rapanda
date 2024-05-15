@@ -19,9 +19,9 @@
   <meta name="twitter:image" content="">
   <script src="https://cdn.jsdelivr.net/npm/viewport-extra@2.0.1/dist/iife/viewport-extra.min.js" defer></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-  <link href="<?php echo get_template_directory_uri(); ?>/css/popup.css" rel="stylesheet" type="text/css">
-  <link href="<?php echo get_template_directory_uri(); ?>/css/reset.css" media="all" rel="stylesheet" type="text/css" />
-  <link href="<?php echo get_template_directory_uri(); ?>/css/style.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="<?php echo get_template_directory_uri(); ?>/dist/css/popup.css" rel="stylesheet" type="text/css">
+  <link href="<?php echo get_template_directory_uri(); ?>/dist/css/reset.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="<?php echo get_template_directory_uri(); ?>/dist/css/style.css" media="all" rel="stylesheet" type="text/css" />
 
   <?php wp_head(); ?>
 
@@ -35,7 +35,7 @@
       <div class="header-gnav__pc">
         <div class="gnav-logo">
           <a href="#">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/header_logo_02.png">
+            <img src="<?php echo get_template_directory_uri(); ?>/dist/images/header_logo_02.png">
           </a>
         </div>
         <ul class="gnav-list">
@@ -81,7 +81,7 @@
           <nav class="ham-gnav" class="hamburgerGnav">
             <ul class="ham-gnav-list">
               <div class="ham-gnav-logo">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/header_logo_02.png">
+                <img src="<?php echo get_template_directory_uri(); ?>/dist/images/header_logo_02.png">
               </div>
               <li class="ham-gnav-item">
                 <a href="#">
@@ -119,7 +119,7 @@
               </li>
               <div class="ham-gnav-sns">
                 <a href="https://www.instagram.com/rapinda.pan/" target="_blank">
-                  <img src="<?php echo get_template_directory_uri(); ?>/images/insta_logo_small.png">
+                  <img src="<?php echo get_template_directory_uri(); ?>/dist/images/insta_logo_small.png">
                 </a>
               </div>
             </ul>

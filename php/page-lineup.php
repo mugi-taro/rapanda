@@ -37,7 +37,7 @@
             <!-- 01　-->
             <li class="rp-lineup-item fadeInTrigger">
               <div class="rp-lineup-img">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/lineup/pan01.jpg" alt="おすすめパンの写真01">
+                <img src="<?php echo get_template_directory_uri(); ?>/dist/images/lineup/pan01.jpg" alt="おすすめパンの写真01">
                 <p class="rp-lineup-img__tag">
                   調理パン<br>
                   人気No.1
@@ -55,7 +55,7 @@
             <!-- 02　-->
             <li class="rp-lineup-item fadeInTrigger">
               <div class="rp-lineup-img">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/lineup/pan02.jpg" alt="おすすめパンの写真02">
+                <img src="<?php echo get_template_directory_uri(); ?>/dist/images/lineup/pan02.jpg" alt="おすすめパンの写真02">
                 <p class="rp-lineup-img__tag">
                   菓子パン<br>
                   人気No.1
@@ -72,7 +72,7 @@
             <!-- 03　-->
             <li class="rp-lineup-item fadeInTrigger">
               <div class="rp-lineup-img">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/lineup/pan03.jpg" alt="おすすめパンの写真03">
+                <img src="<?php echo get_template_directory_uri(); ?>/dist/images/lineup/pan03.jpg" alt="おすすめパンの写真03">
                 <p class="rp-lineup-img__tag">
                   食パン<br>
                   人気No.1
@@ -89,7 +89,7 @@
             <!-- 04　-->
             <li class="rp-lineup-item fadeInTrigger">
               <div class="rp-lineup-img">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/lineup/pan04.jpg" alt="おすすめパンの写真04">
+                <img src="<?php echo get_template_directory_uri(); ?>/dist/images/lineup/pan04.jpg" alt="おすすめパンの写真04">
               </div>
               <h3 class="rp-lineup-item__title">
                 ベーコンチーズフランス
@@ -102,7 +102,7 @@
             <!-- 05　-->
             <li class="rp-lineup-item fadeInTrigger">
               <div class="rp-lineup-img">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/lineup/pan05.jpg" alt="おすすめパンの写真05">
+                <img src="<?php echo get_template_directory_uri(); ?>/dist/images/lineup/pan05.jpg" alt="おすすめパンの写真05">
               </div>
               <h3 class="rp-lineup-item__title">
                 くるみレーズンフランス
@@ -114,7 +114,7 @@
             <!-- 06　-->
             <li class="rp-lineup-item fadeInTrigger">
               <div class="rp-lineup-img">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/lineup/pan06.jpg" alt="おすすめパンの写真06">
+                <img src="<?php echo get_template_directory_uri(); ?>/dist/images/lineup/pan06.jpg" alt="おすすめパンの写真06">
               </div>
               <h3 class="rp-lineup-item__title">
                 明太子フランス
@@ -127,7 +127,7 @@
             <!-- 07　-->
             <li class="rp-lineup-item fadeInTrigger">
               <div class="rp-lineup-img">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/lineup/pan07.jpg" alt="おすすめパンの写真07">
+                <img src="<?php echo get_template_directory_uri(); ?>/dist/images/lineup/pan07.jpg" alt="おすすめパンの写真07">
               </div>
               <h3 class="rp-lineup-item__title">
                 チョコレートデニッシュ
@@ -139,7 +139,7 @@
             <!-- 08　-->
             <li class="rp-lineup-item fadeInTrigger">
               <div class="rp-lineup-img">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/lineup/pan08.jpg" alt="おすすめパンの写真08">
+                <img src="<?php echo get_template_directory_uri(); ?>/dist/images/lineup/pan08.jpg" alt="おすすめパンの写真08">
               </div>
               <h3 class="rp-lineup-item__title">
                 特製カスタードパイ
@@ -151,7 +151,7 @@
             <!-- 09　-->
             <li class="rp-lineup-item fadeInTrigger">
               <div class="rp-lineup-img">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/lineup/pan09.jpg" alt="おすすめパンの写真09">
+                <img src="<?php echo get_template_directory_uri(); ?>/dist/images/lineup/pan09.jpg" alt="おすすめパンの写真09">
               </div>
               <h3 class="rp-lineup-item__title">
                 きなこパン

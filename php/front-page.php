@@ -6,7 +6,7 @@
       <!-- スタート -->
       <section class="rp-top-start">
         <div class="top-start">
-          <p class="top-start-animation"><img src="<?php echo get_template_directory_uri(); ?>/images/start_logo.png" alt="らぱんだ ロゴ"></p>
+          <p class="top-start-animation"><img src="<?php echo get_template_directory_uri(); ?>/dist/images/start_logo.png" alt="らぱんだ ロゴ"></p>
         </div>
       </section>
       <!-- KV -->
@@ -17,16 +17,16 @@
             <div class="slider-kv_pc">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <img src="<?php echo get_template_directory_uri(); ?>/images/top_pc01.jpg" alt="" />
+                  <img src="<?php echo get_template_directory_uri(); ?>/dist/images/top_pc01.jpg" alt="" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="<?php echo get_template_directory_uri(); ?>/images/top_pc02.jpg" alt="" />
+                  <img src="<?php echo get_template_directory_uri(); ?>/dist/images/top_pc02.jpg" alt="" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="<?php echo get_template_directory_uri(); ?>/images/top_pc04.jpg" alt="" />
+                  <img src="<?php echo get_template_directory_uri(); ?>/dist/images/top_pc04.jpg" alt="" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="<?php echo get_template_directory_uri(); ?>/images/top_pc03.jpg" alt="" />
+                  <img src="<?php echo get_template_directory_uri(); ?>/dist/images/top_pc03.jpg" alt="" />
                 </div>
               </div>
             </div>
@@ -34,16 +34,16 @@
             <div class="slider-kv_sp">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <img src="<?php echo get_template_directory_uri(); ?>/images/top_sp01.jpg" alt="" />
+                  <img src="<?php echo get_template_directory_uri(); ?>/dist/images/top_sp01.jpg" alt="" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="<?php echo get_template_directory_uri(); ?>/images/top_sp02.jpg" alt="" />
+                  <img src="<?php echo get_template_directory_uri(); ?>/dist/images/top_sp02.jpg" alt="" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="<?php echo get_template_directory_uri(); ?>/images/top_sp04.jpg" alt="" />
+                  <img src="<?php echo get_template_directory_uri(); ?>/dist/images/top_sp04.jpg" alt="" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="<?php echo get_template_directory_uri(); ?>/images/top_sp03.jpg" alt="" />
+                  <img src="<?php echo get_template_directory_uri(); ?>/dist/images/top_sp03.jpg" alt="" />
                 </div>
               </div>
             </div>
@@ -69,7 +69,7 @@
               </div>
               <div class="top-about-sns fadeInTrigger">
                 <a href="https://www.instagram.com/rapinda.pan/" target="_blank">
-                  <img src="<?php echo get_template_directory_uri(); ?>/images/insta_logo_small.png">
+                  <img src="<?php echo get_template_directory_uri(); ?>/dist/images/insta_logo_small.png">
                 </a>
               </div>
             </div>
@@ -88,7 +88,7 @@
               </p>
             </div>
             <div class="top-about-img fadeInTrigger">
-              <img src="<?php echo get_template_directory_uri(); ?>/images/about_tree.png" alt="木と鳥のイラスト">
+              <img src="<?php echo get_template_directory_uri(); ?>/dist/images/about_tree.png" alt="木と鳥のイラスト">
             </div>
           </div>
         </div>
@@ -119,8 +119,8 @@
                   </p>
                 </div>
                 <div class="top-concept-item__img">
-                  <img class="zoomInTrigger" src="<?php echo get_template_directory_uri(); ?>/images/concept_material01-02.jpg" alt="こだわりの材料 卵">
-                  <img class="zoomInTrigger" src="<?php echo get_template_directory_uri(); ?>/images/concept_material02.jpg" alt="こだわりの材料 サトウキビ">
+                  <img class="zoomInTrigger" src="<?php echo get_template_directory_uri(); ?>/dist/images/concept_material01-02.jpg" alt="こだわりの材料 卵">
+                  <img class="zoomInTrigger" src="<?php echo get_template_directory_uri(); ?>/dist/images/concept_material02.jpg" alt="こだわりの材料 サトウキビ">
                 </div>
                 <a class="rp-btn-white fadeInTrigger" href="./lineup.html">
                   パンのラインナップはこちら
@@ -140,8 +140,8 @@
                   </p>
                 </div>
                 <div class="top-concept-item__img zoomInTrigger">
-                  <img class="zoomInTrigger" src="<?php echo get_template_directory_uri(); ?>/images/concept_natural01.jpg" alt="天然酵母">
-                  <img class="zoomInTrigger" src="<?php echo get_template_directory_uri(); ?>/images/concept_natural02.jpg" alt="天然酵母">
+                  <img class="zoomInTrigger" src="<?php echo get_template_directory_uri(); ?>/dist/images/concept_natural01.jpg" alt="天然酵母">
+                  <img class="zoomInTrigger" src="<?php echo get_template_directory_uri(); ?>/dist/images/concept_natural02.jpg" alt="天然酵母">
                 </div>
               </div>
 
@@ -157,8 +157,8 @@
                   </p>
                 </div>
                 <div class="top-concept-item__img">
-                  <img class="zoomInTrigger" src="<?php echo get_template_directory_uri(); ?>/images/concept_chef01.jpg" alt="こだわりの材料">
-                  <img  class="zoomInTrigger" src="<?php echo get_template_directory_uri(); ?>/images/concept_chef02.jpg" alt="こだわりの材料">
+                  <img class="zoomInTrigger" src="<?php echo get_template_directory_uri(); ?>/dist/images/concept_chef01.jpg" alt="こだわりの材料">
+                  <img  class="zoomInTrigger" src="<?php echo get_template_directory_uri(); ?>/dist/images/concept_chef02.jpg" alt="こだわりの材料">
                 </div>
                 <a class="rp-btn-brown pl_jsModalSwitch notAnch fadeInTrigger" href="#!" data-mfp-src="#item01">
                   シェフのプロフィールはこちら
@@ -167,7 +167,7 @@
                   <div class="pl_modalInner">
                     <div class="top-concept-modal">
                       <div class="top-concept-modal__img">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/concept_modal_img.jpg">
+                        <img src="<?php echo get_template_directory_uri(); ?>/dist/images/concept_modal_img.jpg">
                       </div>
                       <div class="top-concept-modal__write">
                         <h3 class="top-concept-modal__title">
@@ -216,7 +216,7 @@
                 <!-- 1枠目 -->
                 <div class="swiper-slide">
                   <a href="./daily.html#daily01">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/daily_first01.jpg" alt="らぱんだ朝の様子" class="top-daily-img">
+                    <img src="<?php echo get_template_directory_uri(); ?>/dist/images/daily_first01.jpg" alt="らぱんだ朝の様子" class="top-daily-img">
                     <div class="top-daily-write">
                       <h3 class="top-daily-write__title">
                         <span class="top-daily-write__title--time">9:00〜</span><br>
@@ -231,7 +231,7 @@
                 <!-- 2枠目 -->
                 <div class="swiper-slide">
                   <a href="./daily.html#daily02">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/daily_second01-02.jpg" alt="らぱんだ昼の様子" class="top-daily-img">
+                    <img src="<?php echo get_template_directory_uri(); ?>/dist/images/daily_second01-02.jpg" alt="らぱんだ昼の様子" class="top-daily-img">
                     <div class="top-daily-write">
                       <h3 class="top-daily-write__title">
                         <span class="top-daily-write__title--time">10:30〜</span><br>
@@ -246,7 +246,7 @@
                 <!-- 3枠目 -->
                 <div class="swiper-slide">
                   <a href="./daily.html#daily03">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/daily_third01.jpg" alt="らぱんだ3時の様子" class="top-daily-img">
+                    <img src="<?php echo get_template_directory_uri(); ?>/dist/images/daily_third01.jpg" alt="らぱんだ3時の様子" class="top-daily-img">
                     <div class="top-daily-write">
                       <h3 class="top-daily-write__title">
                         <span class="top-daily-write__title--time">15:00〜</span><br>
@@ -317,7 +317,7 @@
               </div>
             </div>
             <div class="top-news-img fadeInTrigger">
-              <img src="<?php echo get_template_directory_uri(); ?>/images/news_birds.png" alt="鳥のイラスト">
+              <img src="<?php echo get_template_directory_uri(); ?>/dist/images/news_birds.png" alt="鳥のイラスト">
             </div>
           </div>
       </section>
@@ -352,7 +352,7 @@
                         <p class="top-info-item-traffic__title">電車</p>
                         <div class="top-info-item-traffic__explain">
                           <div class="top-info-item-traffic__img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/info_train.png" alt="電車のアイコン">
+                            <img src="<?php echo get_template_directory_uri(); ?>/dist/images/info_train.png" alt="電車のアイコン">
                           </div>
                           <p class="top-info-item-traffic__text">
                             近鉄大久保駅から徒歩約15分<br>
@@ -366,7 +366,7 @@
                         <p class="top-info-item-traffic__title">バス</p>
                         <div class="top-info-item-traffic__explain">
                           <div class="top-info-item-traffic__img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/info_bus.png" alt="バスのアイコン">
+                            <img src="<?php echo get_template_directory_uri(); ?>/dist/images/info_bus.png" alt="バスのアイコン">
                           </div>
                           <p class="top-info-item-traffic__text">
                             近鉄大久保駅から約5分(京阪バス宇治大久保淀線 京阪宇治駅行き 宇治神明下車徒歩1分)<br>

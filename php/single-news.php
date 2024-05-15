@@ -35,7 +35,7 @@
         <div class="rp-site-inner">
           <div class="rp-page-item">
             <div class="rp-page-item__img">
-              <img src="<?php echo get_template_directory_uri(); ?>/images/page_sample.jpg" alt="サンプル画像">
+              <img src="<?php echo get_template_directory_uri(); ?>/dist/images/page_sample.jpg" alt="サンプル画像">
             </div>
             <p class="rp-page-item__text">
               いつもご利用いただきありがとうございます。<br>

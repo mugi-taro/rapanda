@@ -191,7 +191,7 @@ Concept
 ---------------------------------*/
 .rp-top-concept {
   position: relative;
-  height: 2000px;
+  height: 2200px;
   margin-top: 240px;
 }
 @media screen and (max-width: 900px) {
@@ -207,7 +207,7 @@ Concept
 }
 @media screen and (max-width: 500px) {
   .rp-top-concept {
-    height: 2300px;
+    height: 2600px;
   }
 }
 .rp-top-concept::before {

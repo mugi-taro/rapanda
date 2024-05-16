@@ -4,19 +4,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <link rel="shortcut icon" href="" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-  <title></title>
-  <meta name="description" content="">
-  <meta name="keywords" content="" />
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="">
-  <meta property="og:description" content="">
-  <meta property="og:url" content="">
-  <meta property="og:site_name" content="">
-  <meta property="og:image" content="">
+  <title><?php bloginfo( 'name' ); ?></title>
+  <meta name="description" content="<?php bloginfo( 'description' ); ?>">
   <meta property="og:locale" content="ja_JP">
-  <meta name="twitter:image" content="">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="<?php bloginfo( 'name' ); ?>">
+  <meta property="og:description" content="<?php bloginfo( 'description' ); ?>">
+  <meta property="og:url" content="https://rapinda.net/">
+  <meta property="og:site_name" content="<?php bloginfo( 'name' ); ?>">
+  <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/dist/images/short_icon.jpg">
   <script src="https://cdn.jsdelivr.net/npm/viewport-extra@2.0.1/dist/iife/viewport-extra.min.js" defer></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link href="<?php echo get_template_directory_uri(); ?>/dist/css/popup.css" rel="stylesheet" type="text/css">
@@ -34,36 +31,36 @@
       <!-- グローバルナビ PC -->
       <div class="header-gnav__pc">
         <div class="gnav-logo">
-          <a href="#">
+          <a href="/">
             <img src="<?php echo get_template_directory_uri(); ?>/dist/images/header_logo_02.png">
           </a>
         </div>
         <ul class="gnav-list">
           <li class="gnav-item">
-            <a href="#about">
+            <a href="/#about">
               紹介<br>About
             </a>
           </li>
           <li class="gnav-item">
-            <a href="#concept">
+            <a href="/#concept">
               コンセプト<br>
               <span>Concept</span>
             </a>
           </li>
           <li class="gnav-item">
-            <a href="#topDaily">
+            <a href="/#topDaily">
               お店の１日<br>
               <span>Daily</span>
             </a>
           </li>
           <li class="gnav-item">
-            <a href="#news">
+            <a href="/#news">
               お知らせ<br>
               <span>News</span>
             </a>
           </li>
           <li class="gnav-item">
-            <a href="#information">
+            <a href="/#information">
               基本情報<br>
               <span>Information</span>
             </a>
@@ -84,35 +81,35 @@
                 <img src="<?php echo get_template_directory_uri(); ?>/dist/images/header_logo_02.png">
               </div>
               <li class="ham-gnav-item">
-                <a href="#">
+                <a href="/">
                   ホーム<br>Home
                 </a>
               </li>
               <li class="ham-gnav-item">
-                <a href="#about">
+                <a href="/#about">
                   紹介<br>About
                 </a>
               </li>
               <li class="ham-gnav-item">
-                <a href="#concept">
+                <a href="/#concept">
                   コンセプト<br>
                   <span>Concept</span>
                 </a>
               </li>
               <li class="ham-gnav-item">
-                <a href="#topDaily">
+                <a href="/#topDaily">
                   お店の１日<br>
                   <span>Daily</span>
                 </a>
               </li>
               <li class="ham-gnav-item">
-                <a href="#news">
+                <a href="/#news">
                   お知らせ<br>
                   <span>News</span>
                 </a>
               </li>
               <li class="ham-gnav-item">
-                <a href="#information">
+                <a href="/#information">
                   基本情報<br>
                   <span>Information</span>
                 </a>

@@ -274,7 +274,7 @@ Concept
 }
 .top-concept-item__text {
   margin: 24px 0;
-  line-height: 1.6rem;
+  line-height: 2rem;
 }
 @media screen and (max-width: 768px) {
   .top-concept-item__text {

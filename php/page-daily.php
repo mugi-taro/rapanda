@@ -36,13 +36,13 @@
             <div class="swiper slider">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <img src="<?php echo get_template_directory_uri(); ?>/dist/images/daily_first01.jpg" alt="" />
+                  <img src="<?php echo get_template_directory_uri(); ?>/dist/images/daily_first01.jpg" alt="らぱんだ朝の様子01" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="<?php echo get_template_directory_uri(); ?>/dist/images/daily_first02.jpg" alt="" />
+                  <img src="<?php echo get_template_directory_uri(); ?>/dist/images/daily_first02.jpg" alt="らぱんだ朝の様子02" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="<?php echo get_template_directory_uri(); ?>/dist/images/daily_images03.jpg" alt="" />
+                  <img src="<?php echo get_template_directory_uri(); ?>/dist/images/daily_images03.jpg" alt="らぱんだ朝の様子03" />
                 </div>
               </div>
             </div>
@@ -50,13 +50,13 @@
             <div class="swiper slider-thumbnail">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <img src="<?php echo get_template_directory_uri(); ?>/dist/images/daily_first01.jpg" alt="" />
+                  <img src="<?php echo get_template_directory_uri(); ?>/dist/images/daily_first01.jpg" alt="らぱんだ昼の様子01 サムネイル" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="<?php echo get_template_directory_uri(); ?>/dist/images/daily_first02.jpg" alt="" />
+                  <img src="<?php echo get_template_directory_uri(); ?>/dist/images/daily_first02.jpg" alt="らぱんだ昼の様子02 サムネイル" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="<?php echo get_template_directory_uri(); ?>/dist/images/daily_images03.jpg" alt="" />
+                  <img src="<?php echo get_template_directory_uri(); ?>/dist/images/daily_images03.jpg" alt="らぱんだ昼の様子03 サムネイル" />
                 </div>
               </div>
             </div>
@@ -99,13 +99,13 @@
             <div class="swiper slider02">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <img src="<?php echo get_template_directory_uri(); ?>/dist/images/daily_second01-02.jpg" alt="" />
+                  <img src="<?php echo get_template_directory_uri(); ?>/dist/images/daily_second01-02.jpg" alt="らぱんだ昼の様子01" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="<?php echo get_template_directory_uri(); ?>/dist/images/daily_second02.jpg" alt="" />
+                  <img src="<?php echo get_template_directory_uri(); ?>/dist/images/daily_second02.jpg" alt="らぱんだ昼の様子02" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="<?php echo get_template_directory_uri(); ?>/dist/images/daily_second03.jpg" alt="" />
+                  <img src="<?php echo get_template_directory_uri(); ?>/dist/images/daily_second03.jpg" alt="らぱんだ昼の様子03" />
                 </div>
               </div>
             </div>
@@ -113,13 +113,13 @@
             <div class="swiper slider-thumbnail02">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <img src="<?php echo get_template_directory_uri(); ?>/dist/images/daily_second01-02.jpg" alt="" />
+                  <img src="<?php echo get_template_directory_uri(); ?>/dist/images/daily_second01-02.jpg" alt="らぱんだ昼の様子01 サムネイル" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="<?php echo get_template_directory_uri(); ?>/dist/images/daily_second02.jpg" alt="" />
+                  <img src="<?php echo get_template_directory_uri(); ?>/dist/images/daily_second02.jpg" alt="らぱんだ昼の様子02 サムネイル" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="<?php echo get_template_directory_uri(); ?>/dist/images/daily_second03.jpg" alt="" />
+                  <img src="<?php echo get_template_directory_uri(); ?>/dist/images/daily_second03.jpg" alt="らぱんだ昼の様子03 サムネイル" />
                 </div>
               </div>
             </div>
@@ -163,13 +163,13 @@
             <div class="swiper slider03">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <img src="<?php echo get_template_directory_uri(); ?>/dist/images/daily_third01.jpg" alt="" />
+                  <img src="<?php echo get_template_directory_uri(); ?>/dist/images/daily_third01.jpg" alt="らぱんだ3時の様子01" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="<?php echo get_template_directory_uri(); ?>/dist/images/daily_third02.jpg" alt="" />
+                  <img src="<?php echo get_template_directory_uri(); ?>/dist/images/daily_third02.jpg" alt="らぱんだ3時の様子02" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="<?php echo get_template_directory_uri(); ?>/dist/images/daily_third03.jpg" alt="" />
+                  <img src="<?php echo get_template_directory_uri(); ?>/dist/images/daily_third03.jpg" alt="らぱんだ3時の様子03" />
                 </div>
               </div>
             </div>
@@ -177,13 +177,13 @@
             <div class="swiper slider-thumbnail03">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <img src="<?php echo get_template_directory_uri(); ?>/dist/images/daily_third01.jpg" alt="" />
+                  <img src="<?php echo get_template_directory_uri(); ?>/dist/images/daily_third01.jpg" alt="らぱんだ3時の様子01 サムネイル" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="<?php echo get_template_directory_uri(); ?>/dist/images/daily_third02.jpg" alt="" />
+                  <img src="<?php echo get_template_directory_uri(); ?>/dist/images/daily_third02.jpg" alt="らぱんだ3時の様子02 サムネイル" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="<?php echo get_template_directory_uri(); ?>/dist/images/daily_third03.jpg" alt="" />
+                  <img src="<?php echo get_template_directory_uri(); ?>/dist/images/daily_third03.jpg" alt="らぱんだ3時の様子03 サムネイル" />
                 </div>
               </div>
             </div>

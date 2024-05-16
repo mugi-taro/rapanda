@@ -18,15 +18,9 @@
           <!-- パンくず -->
           <div class="rp-breadcrumb">
             <div class="rp-breadcrumb-inner">
-              <span>
-                <a href="#">
-                  <span>Top</span>
-                </a>
-              </span>
-              &#65295;
-              <span>
-                <span>お知らせ一覧</span>
-              </span>
+            <?php if (function_exists('bcn_display')) {
+              bcn_display();
+            } ?>
             </div>
           </div>
         </div>

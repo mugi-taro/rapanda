@@ -87,6 +87,11 @@ if (!is_admin()) {
     // add_action('admin_enqueue_scripts', 'admin_file_load_assets');
 }
 
+// アイキャッチ画像の設定をテーマに適用
+add_theme_support('post-thumbnails');
+
+
+
 /* === お知らせ === */
 function news_post_type()
 {
@@ -97,8 +102,8 @@ function news_post_type()
         array(
             'label' => 'お知らせ', //カスタム投稿タイプの表示名
             'public' => true, // 公開（管理画面に表示）するか
-            'menu_position' => 6, //管理画面の表示順 ※「施工実績」の下
-            'menu_icon' => 'dashicons-clipboard', //管理画面で表示されるアイコン
+            'menu_position' => 5, //管理画面の表示順
+            'menu_icon' => 'dashicons-buddicons-pm', //管理画面で表示されるアイコン
             'has_archive' => true, //一覧（アーカイブ）ページを生成
             'supports' => array( //記事編集画面の表示項目
                 'title', //タイトル
@@ -116,3 +121,22 @@ function news_post_type()
 
 //「お知らせ」投稿タイプに関する情報を登録
 add_action('init', 'news_post_type');
+
+// アイキャッチ画像を管理画面に表示（見出し）
+function news_column($columns) {
+	$columns['thumbnail'] = 'アイキャッチ';
+	return $columns;
+}
+
+// アイキャッチ画像を管理画面に表示（テーブル）
+function news_columns_list($column_name, $post_id) {
+	if ( 'thumbnail' == $column_name ) {
+        $thumb = get_the_post_thumbnail($post_id, array(100,100), 'thumbnail');
+        echo ( $thumb ) ? $thumb : '?';
+	} 
+}
+
+//manage_edit-[カスタム投稿タイプのスラッグ]_columns
+add_filter('manage_edit-news_columns', 'news_column');
+//manage_[カスタム投稿タイプのスラッグ]_posts_custom_column
+add_action('manage_news_posts_custom_column', 'news_columns_list', 10, 2);

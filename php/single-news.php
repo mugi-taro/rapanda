@@ -70,7 +70,7 @@ if (have_rows('news_post')) :
 
 
           <div>
-            <a href="/news/" class="rp-pagenavi__text">
+            <a href="<?php echo esc_url(home_url('news')); ?>" class="rp-pagenavi__text">
               <span>お知らせ <br class="sp-only">一覧に戻る</span>
             </a>
           </div>
@@ -88,7 +88,7 @@ if (have_rows('news_post')) :
           </div>
 
           <?php else : ?>
-            <div class="c-btn-next"></div>
+            <div class="rp-btn-next"></div>
             <?php endif; ?>
 
         </nav>

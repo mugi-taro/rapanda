@@ -140,3 +140,46 @@ function news_columns_list($column_name, $post_id) {
 add_filter('manage_edit-news_columns', 'news_column');
 //manage_[カスタム投稿タイプのスラッグ]_posts_custom_column
 add_action('manage_news_posts_custom_column', 'news_columns_list', 10, 2);
+
+// 特定の記事を抽出する関数（タクノミー、タームの設定なし）
+function get_specific_posts( $post_type, $number = -1 ){
+
+	$args = array(
+		'post_type' => $post_type,
+		'posts_per_page' => $number, 
+	);
+	$specific_posts = new WP_Query( $args );
+	return $specific_posts;
+}
+
+// ページネーション有効の際に使う一覧表示関数（お知らせのみ設定）
+function get_pagination_posts(){
+
+    $paged = get_query_var('paged') ? get_query_var('paged') : 1;
+
+	$args = array(
+		'post_type' => 'news',
+		'posts_per_page' => 1, 
+        'paged' => $paged,
+	);
+	$pagination_posts = new WP_Query( $args );
+	return $pagination_posts;
+}
+
+// ページネーション設定（お知らせ仕様）
+function news_pagination(){
+
+	$args = array(
+        'mid_size'      => 2, // 現在ページの左右に表示するページ番号の数
+        'prev_next'     => true, // 「前へ」「次へ」のリンクを表示する場合はtrue
+        'prev_text'     => ('<'), // 「前へ」リンクのテキスト
+        'next_text'     => ('>'), // 「次へ」リンクのテキスト
+        'type'          => 'list', // 戻り値の指定 (plain/list
+    );
+
+    the_posts_pagination($args);
+
+}
+
+
+?>

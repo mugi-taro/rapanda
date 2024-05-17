@@ -123,7 +123,7 @@
                 <img class="zoomInTrigger" src="<?php echo get_template_directory_uri(); ?>/dist/images/concept_material01-02.jpg" alt="こだわりの材料 卵">
                 <img class="zoomInTrigger" src="<?php echo get_template_directory_uri(); ?>/dist/images/concept_material02.jpg" alt="こだわりの材料 サトウキビ">
               </div>
-              <a class="rp-btn-white fadeInTrigger" href="/lineup/">
+              <a class="rp-btn-white fadeInTrigger" href="<?php echo esc_url( home_url('lineup') ); ?>">
                 パンのラインナップはこちら
               </a>
             </div>
@@ -216,7 +216,7 @@
             <div class="swiper-wrapper fadeInTrigger">
               <!-- 1枠目 -->
               <div class="swiper-slide">
-                <a href="/daily#daily01">
+                <a href="<?php echo esc_url( home_url('daily#daily01') ); ?>">
                   <img src="<?php echo get_template_directory_uri(); ?>/dist/images/daily_first01.jpg" alt="らぱんだ朝の様子" class="top-daily-img">
                   <div class="top-daily-write">
                     <h3 class="top-daily-write__title">
@@ -231,7 +231,7 @@
               </div>
               <!-- 2枠目 -->
               <div class="swiper-slide">
-                <a href="/daily#daily02">
+                <a href="<?php echo esc_url( home_url('daily#daily02') ); ?>">
                   <img src="<?php echo get_template_directory_uri(); ?>/dist/images/daily_second01-02.jpg" alt="らぱんだ昼の様子" class="top-daily-img">
                   <div class="top-daily-write">
                     <h3 class="top-daily-write__title">
@@ -246,7 +246,7 @@
               </div>
               <!-- 3枠目 -->
               <div class="swiper-slide">
-                <a href="/daily#daily03">
+                <a href="<?php echo esc_url( home_url('daily#daily03') ); ?>">
                   <img src="<?php echo get_template_directory_uri(); ?>/dist/images/daily_third03.jpg" alt="らぱんだ3時の様子" class="top-daily-img">
                   <div class="top-daily-write">
                     <h3 class="top-daily-write__title">
@@ -280,40 +280,30 @@
                   パン工房らぱんだからのお知らせ
                 </p>
               </div>
-              <a href="/news/" class="top-news-link fadeInTrigger">
+              <a href="<?php echo esc_url( home_url('news') ); ?>" class="top-news-link fadeInTrigger">
                 all view
               </a>
             </div>
             <div class="top-news-right fadeInTrigger">
               <ul class="top-news-list">
-                <!-- 1 -->
-                <a href="./page.html">
+
+              <?php
+        $news_pages = get_specific_posts('news', 4);
+        if ($news_pages->have_posts()) :
+          while ($news_pages->have_posts()) : $news_pages->the_post();
+          ?>
+                <a href="<?php the_permalink(); ?>">
                   <li class="top-news-item">
-                    <span class="top-news-item__date">2024.02.01</span>
-                    商品の一部価格変更について
+                    <span class="top-news-item__date"><?php the_time('Y.m.d'); ?></span>
+                    <?php the_title(); ?>
                   </li>
                 </a>
-                <!-- 2 -->
-                <a href="./page.html">
-                  <li class="top-news-item">
-                    <span class="top-news-item__date">2024.01.26</span>
-                    2月の営業日
-                  </li>
-                </a>
-                <!-- 3 -->
-                <a href="./page.html">
-                  <li class="top-news-item">
-                    <span class="top-news-item__date">204.01.06</span>
-                    あけましておめでとうございます
-                  </li>
-                </a>
-                <!-- 4 -->
-                <a href="./page.html">
-                  <li class="top-news-item _mb-0">
-                    <span class="top-news-item__date">2023.12.28</span>
-                    よいお年をお迎えください
-                  </li>
-                </a>
+
+            <?php
+            endwhile;
+          endif;
+          wp_reset_postdata();
+          ?>
               </ul>
             </div>
           </div>

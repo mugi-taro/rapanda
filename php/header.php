@@ -5,14 +5,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-  <title><?php bloginfo( 'name' ); ?></title>
-  <meta name="description" content="<?php bloginfo( 'description' ); ?>">
+  <title><?php bloginfo('name'); ?></title>
+  <meta name="description" content="<?php bloginfo('description'); ?>">
   <meta property="og:locale" content="ja_JP">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="<?php bloginfo( 'name' ); ?>">
-  <meta property="og:description" content="<?php bloginfo( 'description' ); ?>">
+  <meta property="og:title" content="<?php bloginfo('name'); ?>">
+  <meta property="og:description" content="<?php bloginfo('description'); ?>">
   <meta property="og:url" content="https://rapinda.net/">
-  <meta property="og:site_name" content="<?php bloginfo( 'name' ); ?>">
+  <meta property="og:site_name" content="<?php bloginfo('name'); ?>">
   <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/dist/images/short_icon.jpg">
   <script src="https://cdn.jsdelivr.net/npm/viewport-extra@2.0.1/dist/iife/viewport-extra.min.js" defer></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
@@ -31,39 +31,59 @@
       <!-- グローバルナビ PC -->
       <div class="header-gnav__pc">
         <div class="gnav-logo">
-          <a href="/">
+          <a href="<?php echo esc_url(home_url()); ?>">
             <img src="<?php echo get_template_directory_uri(); ?>/dist/images/header_logo_02.png">
           </a>
         </div>
         <ul class="gnav-list">
           <li class="gnav-item">
-            <a href="/#about">
-              紹介<br>About
-            </a>
+            <?php if (is_front_page()) : ?>
+              <a href="#about">
+              <?php else : ?>
+                <a href="<?php echo esc_url(home_url('#about')); ?>">
+                <?php endif; ?>
+                紹介<br>About
+                </a>
           </li>
           <li class="gnav-item">
-            <a href="/#concept">
-              コンセプト<br>
-              <span>Concept</span>
-            </a>
+            <?php if (is_front_page()) : ?>
+              <a href="#concept">
+              <?php else : ?>
+                <a href="<?php echo esc_url(home_url('#concept')); ?>">
+                <?php endif; ?>
+                コンセプト<br>
+                <span>Concept</span>
+                </a>
           </li>
           <li class="gnav-item">
-            <a href="/#topDaily">
-              お店の１日<br>
-              <span>Daily</span>
-            </a>
+            <?php if (is_front_page()) : ?>
+              <a href="#topDaily">
+              <?php else : ?>
+                <a href="<?php echo esc_url(home_url('#topDaily')); ?>">
+                <?php endif; ?>
+                お店の１日<br>
+                <span>Daily</span>
+                </a>
           </li>
           <li class="gnav-item">
-            <a href="/#news">
-              お知らせ<br>
-              <span>News</span>
-            </a>
+            <?php if (is_front_page()) : ?>
+              <a href="#news">
+              <?php else : ?>
+                <a href="<?php echo esc_url(home_url('#news')); ?>">
+                <?php endif; ?>
+                お知らせ<br>
+                <span>News</span>
+                </a>
           </li>
           <li class="gnav-item">
-            <a href="/#information">
-              基本情報<br>
-              <span>Information</span>
-            </a>
+            <?php if (is_front_page()) : ?>
+              <a href="#information">
+              <?php else : ?>
+                <a href="<?php echo esc_url(home_url('#information')); ?>">
+                <?php endif; ?>
+                基本情報<br>
+                <span>Information</span>
+                </a>
           </li>
           <li class="gnav-item__tell">
             <a href="tel:0774-77-2641">
@@ -81,35 +101,59 @@
                 <img src="<?php echo get_template_directory_uri(); ?>/dist/images/header_logo_02.png">
               </div>
               <li class="ham-gnav-item">
-                <a href="/">
-                  ホーム<br>Home
-                </a>
+                <?php if (is_front_page()) : ?>
+                  <a href="">
+                  <?php else : ?>
+                    <a href="<?php echo esc_url(home_url()); ?>">
+                    <?php endif; ?>
+                    ホーム<br>Home
+                    </a>
               </li>
               <li class="ham-gnav-item">
-                <a href="/#about">
+              <?php if (is_front_page()) : ?>
+              <a href="#about">
+              <?php else : ?>
+                <a href="<?php echo esc_url(home_url('#about')); ?>">
+                <?php endif; ?>
                   紹介<br>About
                 </a>
               </li>
               <li class="ham-gnav-item">
-                <a href="/#concept">
+              <?php if (is_front_page()) : ?>
+              <a href="#concept">
+              <?php else : ?>
+                <a href="<?php echo esc_url(home_url('#concept')); ?>">
+                <?php endif; ?>
                   コンセプト<br>
                   <span>Concept</span>
                 </a>
               </li>
               <li class="ham-gnav-item">
-                <a href="/#topDaily">
+              <?php if (is_front_page()) : ?>
+              <a href="#topDaily">
+              <?php else : ?>
+                <a href="<?php echo esc_url(home_url('#topDaily')); ?>">
+                <?php endif; ?>
                   お店の１日<br>
                   <span>Daily</span>
                 </a>
               </li>
               <li class="ham-gnav-item">
-                <a href="/#news">
+              <?php if (is_front_page()) : ?>
+              <a href="#news">
+              <?php else : ?>
+                <a href="<?php echo esc_url(home_url('#news')); ?>">
+                <?php endif; ?>
                   お知らせ<br>
                   <span>News</span>
                 </a>
               </li>
               <li class="ham-gnav-item">
-                <a href="/#information">
+              <?php if (is_front_page()) : ?>
+              <a href="#information">
+              <?php else : ?>
+                <a href="<?php echo esc_url(home_url('#information')); ?>">
+                <?php endif; ?>
                   基本情報<br>
                   <span>Information</span>
                 </a>

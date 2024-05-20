@@ -50,7 +50,7 @@
           ?>
         </ul>
 
-        <div>
+        <div class='_mt-80'>
           <?php news_pagination(); ?>
         </div>
 

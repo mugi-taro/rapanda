@@ -66,7 +66,7 @@ TOP
   height: 100%;
   float: right;
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 650px) {
   .top-kv img {
     width: 100%;
   }
@@ -203,6 +203,11 @@ Concept
   .rp-top-concept {
     height: 3600px;
     margin-top: 60px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .rp-top-concept {
+    height: 3200px;
   }
 }
 @media screen and (max-width: 500px) {
@@ -676,6 +681,11 @@ Info
     height: 1700px;
   }
 }
+@media screen and (max-width: 650px) {
+  .rp-top-info {
+    height: 1850px;
+  }
+}
 @media screen and (max-width: 550px) {
   .rp-top-info {
     height: 2000px;
@@ -693,7 +703,6 @@ Info
 }
 @media screen and (max-width: 768px) {
   .rp-top-info::before {
-    height: 450px;
     background: url("../../dist/images/info_bk_sp.jpg");
     background-size: contain;
     background-repeat: no-repeat;
@@ -711,6 +720,16 @@ Info
   content: "";
 }
 @media screen and (max-width: 768px) {
+  .rp-top-info::after {
+    height: 1700px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .rp-top-info::after {
+    height: 1850px;
+  }
+}
+@media screen and (max-width: 550px) {
   .rp-top-info::after {
     height: 2000px;
   }
@@ -735,9 +754,9 @@ Info
     padding: 24px;
   }
 }
-@media screen and (max-width: 630px) {
+@media screen and (max-width: 650px) {
   .top-info-box {
-    top: 60px;
+    top: 200px;
   }
 }
 @media screen and (max-width: 550px) {

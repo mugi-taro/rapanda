@@ -31,7 +31,7 @@
         <ul class="rp-news-list">
 
           <?php
-          $news_pages = get_pagination_posts();
+          $news_pages = get_specific_posts('news',2);
           if ($news_pages->have_posts()) :
             while ($news_pages->have_posts()) : $news_pages->the_post();
           ?>

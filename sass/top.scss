@@ -78,7 +78,7 @@ TOP
         height: 100%;
         right: 0;
 
-        @media screen and (max-width: 550px) {
+        @media screen and (max-width: 650px) {
             width: 100%;
         }
     }
@@ -220,6 +220,10 @@ Concept
     @media screen and (max-width: 768px) {
         margin-top: 60px;
         height: 3600px;
+    }
+
+    @media screen and (max-width: 650px) {
+        height: 3200px;
     }
 
     @media screen and (max-width: 500px) {
@@ -712,6 +716,10 @@ Info
         height: 1700px;
     }
 
+    @media screen and (max-width: 650px) {
+        height: 1850px;
+    }
+
     @media screen and (max-width: 550px) {
         height: 2000px;
     }
@@ -728,7 +736,6 @@ Info
         background-size: contain;
 
         @media screen and (max-width: 768px) {
-            height: 450px;
             background: url('../../dist/images/info_bk_sp.jpg');
             background-repeat: no-repeat;
             background-size: contain;
@@ -746,8 +753,16 @@ Info
         background-repeat: no-repeat;
         background-size: cover;
 
-
         @media screen and (max-width: 768px) {
+            height: 1700px;
+        }
+
+        @media screen and (max-width: 650px) {
+            height: 1850px;
+        }
+
+
+        @media screen and (max-width: 550px) {
             height: 2000px;
         }
 
@@ -774,8 +789,8 @@ Info
             padding: 24px;
         }
 
-        @media screen and (max-width: 630px) {
-            top: 60px;
+        @media screen and (max-width: 650px) {
+            top: 200px;
         }
 
         @media screen and (max-width: 550px) {

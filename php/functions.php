@@ -159,7 +159,7 @@ function get_specific_posts( $post_type, $number = -1 ){
 function news_pagination(){
 
 	$args = array(
-        'total'         => 2,
+        'total'         => 1,
         'mid_size'      => 2, // 現在ページの左右に表示するページ番号の数
         'prev_next'     => true, // 「前へ」「次へ」のリンクを表示する場合はtrue
         'prev_text'     => ('<<'), // 「前へ」リンクのテキスト

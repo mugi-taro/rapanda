@@ -6,7 +6,7 @@ if (!is_admin()) {
     function file_load_assets()
     {
 
-        /* === コーポレートトップ === */
+        /* === トップページ === */
 
         if (is_front_page() || is_page('top')) {
 

@@ -42,7 +42,7 @@
                   <img src="<?php echo get_template_directory_uri(); ?>/dist/images/daily_first02.jpg" alt="らぱんだ朝の様子02" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="<?php echo get_template_directory_uri(); ?>/dist/images/daily_images03.jpg" alt="らぱんだ朝の様子03" />
+                  <img src="<?php echo get_template_directory_uri(); ?>/dist/images/daily_first03.jpg" alt="らぱんだ朝の様子03" />
                 </div>
               </div>
             </div>
@@ -56,7 +56,7 @@
                   <img src="<?php echo get_template_directory_uri(); ?>/dist/images/daily_first02.jpg" alt="らぱんだ昼の様子02 サムネイル" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="<?php echo get_template_directory_uri(); ?>/dist/images/daily_images03.jpg" alt="らぱんだ昼の様子03 サムネイル" />
+                  <img src="<?php echo get_template_directory_uri(); ?>/dist/images/daily_first03.jpg" alt="らぱんだ昼の様子03 サムネイル" />
                 </div>
               </div>
             </div>

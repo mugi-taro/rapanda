@@ -426,8 +426,16 @@ $white: #fff;
 
         &__img {
 
+            @media screen and (min-width: 650px) {
+                aspect-ratio: 800 / 450;
+            }
+
             img {
                 width: 100%;
+                @media screen and (min-width: 650px) {
+                    object-fit: contain;
+                }
+
             }
         }
 

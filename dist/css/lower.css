@@ -364,8 +364,19 @@
     width: 100%;
   }
 }
+@media screen and (min-width: 650px) {
+  .rp-page-item__img {
+    aspect-ratio: 800/450;
+  }
+}
 .rp-page-item__img img {
   width: 100%;
+}
+@media screen and (min-width: 650px) {
+  .rp-page-item__img img {
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
 }
 .rp-page-item__text {
   margin: 24px 0;

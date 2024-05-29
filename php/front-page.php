@@ -168,7 +168,7 @@
                 <div class="pl_modalInner">
                   <div class="top-concept-modal">
                     <div class="top-concept-modal__img">
-                      <img src="<?php echo get_template_directory_uri(); ?>/dist/images/concept_modal_img.jpg">
+                      <img src="<?php echo get_template_directory_uri(); ?>/dist/images/concept_profile.jpg" alt="シェフの顔写真">
                     </div>
                     <div class="top-concept-modal__write">
                       <h3 class="top-concept-modal__title">

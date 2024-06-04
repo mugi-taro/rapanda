@@ -217,7 +217,7 @@
               <!-- 1枠目 -->
               <div class="swiper-slide">
                 <a href="<?php echo esc_url( home_url('daily#daily01') ); ?>">
-                  <img src="<?php echo get_template_directory_uri(); ?>/dist/images/daily_first01.jpg" alt="らぱんだ朝の様子" class="top-daily-img">
+                  <img src="<?php echo get_template_directory_uri(); ?>/dist/images/daily_first01-01.jpg" alt="らぱんだ朝の様子" class="top-daily-img">
                   <div class="top-daily-write">
                     <h3 class="top-daily-write__title">
                       <span class="top-daily-write__title--time">9:00〜</span><br>

@@ -36,13 +36,13 @@
             <div class="swiper slider">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <img src="<?php echo get_template_directory_uri(); ?>/dist/images/daily_first01.jpg" alt="らぱんだ朝の様子01" />
+                  <img src="<?php echo get_template_directory_uri(); ?>/dist/images/daily_first01-01.jpg" alt="らぱんだ朝の様子01" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="<?php echo get_template_directory_uri(); ?>/dist/images/daily_first02.jpg" alt="らぱんだ朝の様子02" />
+                  <img src="<?php echo get_template_directory_uri(); ?>/dist/images/daily_first02-01.jpg" alt="らぱんだ朝の様子02" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="<?php echo get_template_directory_uri(); ?>/dist/images/daily_first03.jpg" alt="らぱんだ朝の様子03" />
+                  <img src="<?php echo get_template_directory_uri(); ?>/dist/images/daily_first03-01.jpg" alt="らぱんだ朝の様子03" />
                 </div>
               </div>
             </div>
@@ -50,13 +50,13 @@
             <div class="swiper slider-thumbnail">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <img src="<?php echo get_template_directory_uri(); ?>/dist/images/daily_first01.jpg" alt="らぱんだ昼の様子01 サムネイル" />
+                  <img src="<?php echo get_template_directory_uri(); ?>/dist/images/daily_first01-01.jpg" alt="らぱんだ昼の様子01 サムネイル" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="<?php echo get_template_directory_uri(); ?>/dist/images/daily_first02.jpg" alt="らぱんだ昼の様子02 サムネイル" />
+                  <img src="<?php echo get_template_directory_uri(); ?>/dist/images/daily_first02-01.jpg" alt="らぱんだ昼の様子02 サムネイル" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="<?php echo get_template_directory_uri(); ?>/dist/images/daily_first03.jpg" alt="らぱんだ昼の様子03 サムネイル" />
+                  <img src="<?php echo get_template_directory_uri(); ?>/dist/images/daily_first03-01.jpg" alt="らぱんだ昼の様子03 サムネイル" />
                 </div>
               </div>
             </div>
